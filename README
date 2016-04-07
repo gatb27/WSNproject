@@ -1,0 +1,3 @@
+This folder is for the project of WSN. There are two folders:
+1) Model01 for project with simple reforwarding
+2) Model02 for project with reforward only if random timer expires

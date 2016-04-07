@@ -1,0 +1,1 @@
+Folder with all the files of the project of WSN in the second version: a node forwards a packet after a random timer, only if it doesn't see another reforwarding of the same packet  by another node. 

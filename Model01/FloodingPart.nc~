@@ -1,0 +1,14 @@
+#include "Timer.h"
+#include "flooding.h"
+
+module FloodingProject @safe() {
+	uses{
+		interface Boot;
+		interface Timer<TMilli> as Timer1; 
+		interface SplitControl as RadioControl;
+		interface Packet as RadioPacket;
+		interface AMPacket;
+		interface AMSend as RadioAMSend;
+		interface Rec
+	}
+}

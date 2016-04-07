@@ -1,0 +1,417 @@
+test line for external file2
+Activate debug message on channel test
+Creating node:  0
+I'll boot at time:  1 [sec]
+Creating node:  1
+I'll boot at time:  1 [sec]
+Creating node:  2
+I'll boot at time:  1 [sec]
+Creating node:  3
+I'll boot at time:  1 [sec]
+Setting radio channel from node  0  to node  1  with gain  -73.98 dBm
+Setting radio channel from node  1  to node  0  with gain  -74.65 dBm
+Setting radio channel from node  0  to node  2  with gain  -71.95 dBm
+Setting radio channel from node  2  to node  0  with gain  -71.87 dBm
+Setting radio channel from node  0  to node  3  with gain  -73.54 dBm
+Setting radio channel from node  3  to node  0  with gain  -73.19 dBm
+Setting radio channel from node  1  to node  2  with gain  -75.50 dBm
+Setting radio channel from node  2  to node  1  with gain  -74.74 dBm
+Setting radio channel from node  1  to node  3  with gain  -71.69 dBm
+Setting radio channel from node  3  to node  1  with gain  -70.67 dBm
+Setting radio channel from node  2  to node  3  with gain  -67.95 dBm
+Setting radio channel from node  3  to node  2  with gain  -67.69 dBm
+@@@@@@ Creating noise model for node:  0
+@@@@@@ Creating noise model for node:  1
+@@@@@@ Creating noise model for node:  2
+@@@@@@ Creating noise model for node:  3
+----------------------------------------------
+                                              
+      START TOSSIM SIMULATION PART            
+                                              
+----------------------------------------------
+DEBUG (0): I'm the SINK node with id 0 and my RADIO is ON 
+DEBUG (1): I'm a NODE with id 1 and my RADIO is ON 
+DEBUG (3): I'm a NODE with id 3 and my RADIO is ON 
+DEBUG (2): I'm a NODE with id 2 and my RADIO is ON 
+DEBUG (0): 
+DEBUG (0): @@@@@@@@@@@@@@@@@@ NEW PACKET FROM SINK EACH 60s  @@@@@@@@@@@@@@@@@@@@@@@@
+DEBUG (0): I'm the SINK and I post a task for sending a broadcast packet 
+DEBUG (0): SENT FROM 0 
+DEBUG (0): Random INT is -75390808 for Packet ID 0 
+DEBUG (0): Try to send a BROADCAST PACKET at time 0:0:59.593750020 
+DEBUG (0): 	 Source: 0 
+DEBUG (0): 	 Destination: 255 
+DEBUG (0): 	 Packet Type: 6 
+DEBUG (0): 	 Message ID: 0 
+DEBUG (0): 	 Payload: abc 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and I've received a packet from Node 0 
+DEBUG (3): 	 Time of reception: 0:0:59.598434440 
+DEBUG (3): 	 The ID of the message is: 0 
+DEBUG (3): 	 The payload of the packet is: abc 
+DEBUG (3): 	 I've set as TRUE the boolean of packet: 0 
+DEBUG (3): 	 FORWARDING THE PACKET... 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 0 
+DEBUG (2): 	 Time of reception: 0:0:59.598434440 
+DEBUG (2): 	 The ID of the message is: 0 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): 	 I've set as TRUE the boolean of packet: 0 
+DEBUG (2): 	 FORWARDING THE PACKET... 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 0 
+DEBUG (1): 	 Time of reception: 0:0:59.598434440 
+DEBUG (1): 	 The ID of the message is: 0 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): 	 I've set as TRUE the boolean of packet: 0 
+DEBUG (1): 	 FORWARDING THE PACKET... 
+DEBUG (3): 
+DEBUG (3): SENT FROM 3 
+DEBUG (3): I'm node 3. Trying to REFORWARD a BROADCAST PACKET at time 0:0:59.598434450 
+DEBUG (3): 	 Source: 3 
+DEBUG (3): 	 Destination: 255 
+DEBUG (3): 	 Packet Type: 6 
+DEBUG (3): 	 Message ID: 0 
+DEBUG (3): 	 Payload: abc 
+DEBUG (2): 
+DEBUG (2): SENT FROM 2 
+DEBUG (2): I'm node 2. Trying to REFORWARD a BROADCAST PACKET at time 0:0:59.598434450 
+DEBUG (2): 	 Source: 2 
+DEBUG (2): 	 Destination: 255 
+DEBUG (2): 	 Packet Type: 6 
+DEBUG (2): 	 Message ID: 0 
+DEBUG (2): 	 Payload: abc 
+DEBUG (1): 
+DEBUG (1): SENT FROM 1 
+DEBUG (1): I'm node 1. Trying to REFORWARD a BROADCAST PACKET at time 0:0:59.598434450 
+DEBUG (1): 	 Source: 1 
+DEBUG (1): 	 Destination: 255 
+DEBUG (1): 	 Packet Type: 6 
+DEBUG (1): 	 Message ID: 0 
+DEBUG (1): 	 Payload: abc 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and I've received a packet from Node 1 
+DEBUG (3): 	 Time of reception: 0:0:59.599670405 
+DEBUG (3): 	 The ID of the message is: 0 
+DEBUG (3): 	 The payload of the packet is: abc 
+DEBUG (3): 	 I've already received the packet with ID: 0 
+DEBUG (3): 	 DROPPING THE PACKET... 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 1 
+DEBUG (2): 	 Time of reception: 0:0:59.599670405 
+DEBUG (2): 	 The ID of the message is: 0 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): 	 I've already received the packet with ID: 0 
+DEBUG (2): 	 DROPPING THE PACKET... 
+DEBUG (0): 
+DEBUG (0): Packet received by SINK. 
+DEBUG (0): DROPPING THE PACKET... 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and I've received a packet from Node 2 
+DEBUG (3): 	 Time of reception: 0:0:59.606170611 
+DEBUG (3): 	 The ID of the message is: 0 
+DEBUG (3): 	 The payload of the packet is: abc 
+DEBUG (3): 	 I've already received the packet with ID: 0 
+DEBUG (3): 	 DROPPING THE PACKET... 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 2 
+DEBUG (1): 	 Time of reception: 0:0:59.606170611 
+DEBUG (1): 	 The ID of the message is: 0 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): 	 I've already received the packet with ID: 0 
+DEBUG (1): 	 DROPPING THE PACKET... 
+DEBUG (0): 
+DEBUG (0): Packet received by SINK. 
+DEBUG (0): DROPPING THE PACKET... 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 3 
+DEBUG (2): 	 Time of reception: 0:0:59.608154242 
+DEBUG (2): 	 The ID of the message is: 0 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): 	 I've already received the packet with ID: 0 
+DEBUG (2): 	 DROPPING THE PACKET... 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 3 
+DEBUG (1): 	 Time of reception: 0:0:59.608154242 
+DEBUG (1): 	 The ID of the message is: 0 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): 	 I've already received the packet with ID: 0 
+DEBUG (1): 	 DROPPING THE PACKET... 
+DEBUG (0): 
+DEBUG (0): Packet received by SINK. 
+DEBUG (0): DROPPING THE PACKET... 
+DEBUG (0): 
+DEBUG (0): @@@@@@@@@@@@@@@@@@ NEW PACKET FROM SINK EACH 60s  @@@@@@@@@@@@@@@@@@@@@@@@
+DEBUG (0): I'm the SINK and I post a task for sending a broadcast packet 
+DEBUG (0): SENT FROM 0 
+DEBUG (0): Random INT is -75390808 for Packet ID 1 
+DEBUG (0): Try to send a BROADCAST PACKET at time 0:1:58.187500020 
+DEBUG (0): 	 Source: 0 
+DEBUG (0): 	 Destination: 255 
+DEBUG (0): 	 Packet Type: 6 
+DEBUG (0): 	 Message ID: 1 
+DEBUG (0): 	 Payload: abc 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and I've received a packet from Node 0 
+DEBUG (3): 	 Time of reception: 0:1:58.190109257 
+DEBUG (3): 	 The ID of the message is: 1 
+DEBUG (3): 	 The payload of the packet is: abc 
+DEBUG (3): 	 I've set as TRUE the boolean of packet: 1 
+DEBUG (3): 	 FORWARDING THE PACKET... 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 0 
+DEBUG (2): 	 Time of reception: 0:1:58.190109257 
+DEBUG (2): 	 The ID of the message is: 1 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): 	 I've set as TRUE the boolean of packet: 1 
+DEBUG (2): 	 FORWARDING THE PACKET... 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 0 
+DEBUG (1): 	 Time of reception: 0:1:58.190109257 
+DEBUG (1): 	 The ID of the message is: 1 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): 	 I've set as TRUE the boolean of packet: 1 
+DEBUG (1): 	 FORWARDING THE PACKET... 
+DEBUG (3): 
+DEBUG (3): SENT FROM 3 
+DEBUG (3): I'm node 3. Trying to REFORWARD a BROADCAST PACKET at time 0:1:58.190109267 
+DEBUG (3): 	 Source: 3 
+DEBUG (3): 	 Destination: 255 
+DEBUG (3): 	 Packet Type: 6 
+DEBUG (3): 	 Message ID: 1 
+DEBUG (3): 	 Payload: abc 
+DEBUG (2): 
+DEBUG (2): SENT FROM 2 
+DEBUG (2): I'm node 2. Trying to REFORWARD a BROADCAST PACKET at time 0:1:58.190109267 
+DEBUG (2): 	 Source: 2 
+DEBUG (2): 	 Destination: 255 
+DEBUG (2): 	 Packet Type: 6 
+DEBUG (2): 	 Message ID: 1 
+DEBUG (2): 	 Payload: abc 
+DEBUG (1): 
+DEBUG (1): SENT FROM 1 
+DEBUG (1): I'm node 1. Trying to REFORWARD a BROADCAST PACKET at time 0:1:58.190109267 
+DEBUG (1): 	 Source: 1 
+DEBUG (1): 	 Destination: 255 
+DEBUG (1): 	 Packet Type: 6 
+DEBUG (1): 	 Message ID: 1 
+DEBUG (1): 	 Payload: abc 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 3 
+DEBUG (2): 	 Time of reception: 0:1:58.199035607 
+DEBUG (2): 	 The ID of the message is: 1 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): 	 I've already received the packet with ID: 1 
+DEBUG (2): 	 DROPPING THE PACKET... 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 3 
+DEBUG (1): 	 Time of reception: 0:1:58.199035607 
+DEBUG (1): 	 The ID of the message is: 1 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): 	 I've already received the packet with ID: 1 
+DEBUG (1): 	 DROPPING THE PACKET... 
+DEBUG (0): 
+DEBUG (0): Packet received by SINK. 
+DEBUG (0): DROPPING THE PACKET... 
+DEBUG (0): 
+DEBUG (0): @@@@@@@@@@@@@@@@@@ NEW PACKET FROM SINK EACH 60s  @@@@@@@@@@@@@@@@@@@@@@@@
+DEBUG (0): I'm the SINK and I post a task for sending a broadcast packet 
+DEBUG (0): SENT FROM 0 
+DEBUG (0): Random INT is -75390808 for Packet ID 2 
+DEBUG (0): Try to send a BROADCAST PACKET at time 0:2:56.781250020 
+DEBUG (0): 	 Source: 0 
+DEBUG (0): 	 Destination: 255 
+DEBUG (0): 	 Packet Type: 6 
+DEBUG (0): 	 Message ID: 2 
+DEBUG (0): 	 Payload: abc 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and I've received a packet from Node 0 
+DEBUG (3): 	 Time of reception: 0:2:56.788421609 
+DEBUG (3): 	 The ID of the message is: 2 
+DEBUG (3): 	 The payload of the packet is: abc 
+DEBUG (3): 	 I've set as TRUE the boolean of packet: 2 
+DEBUG (3): 	 FORWARDING THE PACKET... 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 0 
+DEBUG (2): 	 Time of reception: 0:2:56.788421609 
+DEBUG (2): 	 The ID of the message is: 2 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): 	 I've set as TRUE the boolean of packet: 2 
+DEBUG (2): 	 FORWARDING THE PACKET... 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 0 
+DEBUG (1): 	 Time of reception: 0:2:56.788421609 
+DEBUG (1): 	 The ID of the message is: 2 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): 	 I've set as TRUE the boolean of packet: 2 
+DEBUG (1): 	 FORWARDING THE PACKET... 
+DEBUG (3): 
+DEBUG (3): SENT FROM 3 
+DEBUG (3): I'm node 3. Trying to REFORWARD a BROADCAST PACKET at time 0:2:56.788421619 
+DEBUG (3): 	 Source: 3 
+DEBUG (3): 	 Destination: 255 
+DEBUG (3): 	 Packet Type: 6 
+DEBUG (3): 	 Message ID: 2 
+DEBUG (3): 	 Payload: abc 
+DEBUG (2): 
+DEBUG (2): SENT FROM 2 
+DEBUG (2): I'm node 2. Trying to REFORWARD a BROADCAST PACKET at time 0:2:56.788421619 
+DEBUG (2): 	 Source: 2 
+DEBUG (2): 	 Destination: 255 
+DEBUG (2): 	 Packet Type: 6 
+DEBUG (2): 	 Message ID: 2 
+DEBUG (2): 	 Payload: abc 
+DEBUG (1): 
+DEBUG (1): SENT FROM 1 
+DEBUG (1): I'm node 1. Trying to REFORWARD a BROADCAST PACKET at time 0:2:56.788421619 
+DEBUG (1): 	 Source: 1 
+DEBUG (1): 	 Destination: 255 
+DEBUG (1): 	 Packet Type: 6 
+DEBUG (1): 	 Message ID: 2 
+DEBUG (1): 	 Payload: abc 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and I've received a packet from Node 1 
+DEBUG (3): 	 Time of reception: 0:2:56.793777422 
+DEBUG (3): 	 The ID of the message is: 2 
+DEBUG (3): 	 The payload of the packet is: abc 
+DEBUG (3): 	 I've already received the packet with ID: 2 
+DEBUG (3): 	 DROPPING THE PACKET... 
+DEBUG (0): 
+DEBUG (0): Packet received by SINK. 
+DEBUG (0): DROPPING THE PACKET... 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 3 
+DEBUG (2): 	 Time of reception: 0:2:56.796844421 
+DEBUG (2): 	 The ID of the message is: 2 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): 	 I've already received the packet with ID: 2 
+DEBUG (2): 	 DROPPING THE PACKET... 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 3 
+DEBUG (1): 	 Time of reception: 0:2:56.796844421 
+DEBUG (1): 	 The ID of the message is: 2 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): 	 I've already received the packet with ID: 2 
+DEBUG (1): 	 DROPPING THE PACKET... 
+DEBUG (0): 
+DEBUG (0): Packet received by SINK. 
+DEBUG (0): DROPPING THE PACKET... 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and I've received a packet from Node 2 
+DEBUG (3): 	 Time of reception: 0:2:56.797851495 
+DEBUG (3): 	 The ID of the message is: 2 
+DEBUG (3): 	 The payload of the packet is: abc 
+DEBUG (3): 	 I've already received the packet with ID: 2 
+DEBUG (3): 	 DROPPING THE PACKET... 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 2 
+DEBUG (1): 	 Time of reception: 0:2:56.797851495 
+DEBUG (1): 	 The ID of the message is: 2 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): 	 I've already received the packet with ID: 2 
+DEBUG (1): 	 DROPPING THE PACKET... 
+DEBUG (0): 
+DEBUG (0): Packet received by SINK. 
+DEBUG (0): DROPPING THE PACKET... 
+DEBUG (0): 
+DEBUG (0): @@@@@@@@@@@@@@@@@@ NEW PACKET FROM SINK EACH 60s  @@@@@@@@@@@@@@@@@@@@@@@@
+DEBUG (0): I'm the SINK and I post a task for sending a broadcast packet 
+DEBUG (0): SENT FROM 0 
+DEBUG (0): Random INT is -75390808 for Packet ID 3 
+DEBUG (0): Try to send a BROADCAST PACKET at time 0:3:55.375000020 
+DEBUG (0): 	 Source: 0 
+DEBUG (0): 	 Destination: 255 
+DEBUG (0): 	 Packet Type: 6 
+DEBUG (0): 	 Message ID: 3 
+DEBUG (0): 	 Payload: abc 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and I've received a packet from Node 0 
+DEBUG (3): 	 Time of reception: 0:3:55.381423932 
+DEBUG (3): 	 The ID of the message is: 3 
+DEBUG (3): 	 The payload of the packet is: abc 
+DEBUG (3): 	 I've set as TRUE the boolean of packet: 3 
+DEBUG (3): 	 FORWARDING THE PACKET... 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 0 
+DEBUG (2): 	 Time of reception: 0:3:55.381423932 
+DEBUG (2): 	 The ID of the message is: 3 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): 	 I've set as TRUE the boolean of packet: 3 
+DEBUG (2): 	 FORWARDING THE PACKET... 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 0 
+DEBUG (1): 	 Time of reception: 0:3:55.381423932 
+DEBUG (1): 	 The ID of the message is: 3 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): 	 I've set as TRUE the boolean of packet: 3 
+DEBUG (1): 	 FORWARDING THE PACKET... 
+DEBUG (3): 
+DEBUG (3): SENT FROM 3 
+DEBUG (3): I'm node 3. Trying to REFORWARD a BROADCAST PACKET at time 0:3:55.381423942 
+DEBUG (3): 	 Source: 3 
+DEBUG (3): 	 Destination: 255 
+DEBUG (3): 	 Packet Type: 6 
+DEBUG (3): 	 Message ID: 3 
+DEBUG (3): 	 Payload: abc 
+DEBUG (2): 
+DEBUG (2): SENT FROM 2 
+DEBUG (2): I'm node 2. Trying to REFORWARD a BROADCAST PACKET at time 0:3:55.381423942 
+DEBUG (2): 	 Source: 2 
+DEBUG (2): 	 Destination: 255 
+DEBUG (2): 	 Packet Type: 6 
+DEBUG (2): 	 Message ID: 3 
+DEBUG (2): 	 Payload: abc 
+DEBUG (1): 
+DEBUG (1): SENT FROM 1 
+DEBUG (1): I'm node 1. Trying to REFORWARD a BROADCAST PACKET at time 0:3:55.381423942 
+DEBUG (1): 	 Source: 1 
+DEBUG (1): 	 Destination: 255 
+DEBUG (1): 	 Packet Type: 6 
+DEBUG (1): 	 Message ID: 3 
+DEBUG (1): 	 Payload: abc 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and I've received a packet from Node 2 
+DEBUG (3): 	 Time of reception: 0:3:55.384902926 
+DEBUG (3): 	 The ID of the message is: 3 
+DEBUG (3): 	 The payload of the packet is: abc 
+DEBUG (3): 	 I've already received the packet with ID: 3 
+DEBUG (3): 	 DROPPING THE PACKET... 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 2 
+DEBUG (1): 	 Time of reception: 0:3:55.384902926 
+DEBUG (1): 	 The ID of the message is: 3 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): 	 I've already received the packet with ID: 3 
+DEBUG (1): 	 DROPPING THE PACKET... 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 3 
+DEBUG (2): 	 Time of reception: 0:3:55.386779746 
+DEBUG (2): 	 The ID of the message is: 3 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): 	 I've already received the packet with ID: 3 
+DEBUG (2): 	 DROPPING THE PACKET... 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 3 
+DEBUG (1): 	 Time of reception: 0:3:55.386779746 
+DEBUG (1): 	 The ID of the message is: 3 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): 	 I've already received the packet with ID: 3 
+DEBUG (1): 	 DROPPING THE PACKET... 
+DEBUG (0): 
+DEBUG (0): Packet received by SINK. 
+DEBUG (0): DROPPING THE PACKET... 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and I've received a packet from Node 1 
+DEBUG (3): 	 Time of reception: 0:3:55.391464167 
+DEBUG (3): 	 The ID of the message is: 3 
+DEBUG (3): 	 The payload of the packet is: abc 
+DEBUG (3): 	 I've already received the packet with ID: 3 
+DEBUG (3): 	 DROPPING THE PACKET... 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 1 
+DEBUG (2): 	 Time of reception: 0:3:55.391464167 
+DEBUG (2): 	 The ID of the message is: 3 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): 	 I've already received the packet with ID: 3 
+DEBUG (2): 	 DROPPING THE PACKET... 
+@@@ SIMULATION FINESHED @@@

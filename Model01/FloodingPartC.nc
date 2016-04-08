@@ -28,6 +28,8 @@ implementation{
 	task void broadcastSink();
 	task void broadcastNode();
 
+    uint16_t sinkCounter=0;
+
 	//----------- BOOT ------------
 	//call start() on the SpliControl that is wired to ActiveMessageC
 	event void Boot.booted() {
@@ -70,7 +72,9 @@ implementation{
 	//----------- SINK TIMER FIRES -----------
 	//When the timer fires, the SINK sends a broadcast message
 	event void TimerSink.fired(){
+		sinkCounter++;
 		dbg("sink", "\n");
+		dbg("sink", "COUNTER: %d \n", sinkCounter);
         dbg("sink", "@@@@@@@@@@@@@@@@@@ NEW PACKET FROM SINK EACH 60s  @@@@@@@@@@@@@@@@@@@@@@@@\n");
 		dbg("sink", "I'm the SINK and I post a task for sending a broadcast packet \n");
 		post broadcastSink();

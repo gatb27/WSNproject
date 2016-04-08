@@ -1,0 +1,319 @@
+Activate debug message on channel test
+Creating node:  0
+I'll boot at time:  1 [sec]
+Creating node:  1
+I'll boot at time:  1 [sec]
+Creating node:  2
+I'll boot at time:  1 [sec]
+Creating node:  3
+I'll boot at time:  1 [sec]
+Setting radio channel from node  0  to node  1  with gain  -73.98 dBm
+Setting radio channel from node  1  to node  0  with gain  -74.65 dBm
+Setting radio channel from node  0  to node  2  with gain  -71.95 dBm
+Setting radio channel from node  2  to node  0  with gain  -71.87 dBm
+Setting radio channel from node  0  to node  3  with gain  -73.54 dBm
+Setting radio channel from node  3  to node  0  with gain  -73.19 dBm
+Setting radio channel from node  1  to node  2  with gain  -75.50 dBm
+Setting radio channel from node  2  to node  1  with gain  -74.74 dBm
+Setting radio channel from node  1  to node  3  with gain  -71.69 dBm
+Setting radio channel from node  3  to node  1  with gain  -70.67 dBm
+Setting radio channel from node  2  to node  3  with gain  -67.95 dBm
+Setting radio channel from node  3  to node  2  with gain  -67.69 dBm
+@@@@@@ Creating noise model for node:  0
+@@@@@@ Creating noise model for node:  1
+@@@@@@ Creating noise model for node:  2
+@@@@@@ Creating noise model for node:  3
+----------------------------------------------
+                                              
+      START TOSSIM SIMULATION PART            
+                                              
+----------------------------------------------
+DEBUG (0): I'm the SINK node with id 0 and my RADIO is ON 
+DEBUG (1): I'm a NODE with id 1 and my RADIO is ON 
+DEBUG (3): I'm a NODE with id 3 and my RADIO is ON 
+DEBUG (2): I'm a NODE with id 2 and my RADIO is ON 
+DEBUG (0): 
+DEBUG (0): I'm the SINK and I post a task for sending a broadcast packet 
+DEBUG (0): SENT FROM 0 
+DEBUG (0): Random INT is 248660136 for Packet ID 0 
+DEBUG (0): Try to send a BROADCAST PACKET at time 0:0:59.593750020 
+DEBUG (0): 	 Source: 0 
+DEBUG (0): 	 Packet Type: 6 
+DEBUG (0): 	 Message ID: 0 
+DEBUG (0): 	 Payload: abc 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 0 
+DEBUG (2): 	 Time of reception: 0:0:59.604400592 
+DEBUG (2): 	 The ID of the message is: 0 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): 	 I've set as TRUE the boolean of packet: 0 
+DEBUG (2): 	 SETTING RANDOM TIMER FOR REFORWARDING... 
+DEBUG (2): The random timer is 1913 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 0 
+DEBUG (1): 	 Time of reception: 0:0:59.604400592 
+DEBUG (1): 	 The ID of the message is: 0 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): 	 I've set as TRUE the boolean of packet: 0 
+DEBUG (1): 	 SETTING RANDOM TIMER FOR REFORWARDING... 
+DEBUG (1): The random timer is 1482 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and my RANDOM timer has expired. 
+DEBUG (1): Proceeding with a REFORWARDING... 
+DEBUG (1): 
+DEBUG (1): SENT FROM 1 
+DEBUG (1): I'm node 1. Trying to REFORWARD a BROADCAST PACKET at time 0:1:1.050781270 
+DEBUG (1): 	 Source: 1 
+DEBUG (1): 	 Destination: 255 
+DEBUG (1): 	 Packet Type: 6 
+DEBUG (1): 	 Message ID: 0 
+DEBUG (1): 	 Payload: abc 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and I've received a packet from Node 1 
+DEBUG (3): 	 Time of reception: 0:1:1.055023188 
+DEBUG (3): 	 The ID of the message is: 0 
+DEBUG (3): 	 The payload of the packet is: abc 
+DEBUG (3): 	 I've set as TRUE the boolean of packet: 0 
+DEBUG (3): 	 SETTING RANDOM TIMER FOR REFORWARDING... 
+DEBUG (3): The random timer is 4707 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 1 
+DEBUG (2): 	 Time of reception: 0:1:1.055023188 
+DEBUG (2): 	 The ID of the message is: 0 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): I've received a packet for which the random timer is running 
+DEBUG (2): STOPPING THE RANDOM TIMER.... 
+DEBUG (0): 
+DEBUG (0): Packet received by SINK. 
+DEBUG (0): DROPPING THE PACKET... 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and my RANDOM timer has expired. 
+DEBUG (3): Proceeding with a REFORWARDING... 
+DEBUG (3): 
+DEBUG (3): SENT FROM 3 
+DEBUG (3): I'm node 3. Trying to REFORWARD a BROADCAST PACKET at time 0:1:5.651367207 
+DEBUG (3): 	 Source: 3 
+DEBUG (3): 	 Destination: 255 
+DEBUG (3): 	 Packet Type: 6 
+DEBUG (3): 	 Message ID: 0 
+DEBUG (3): 	 Payload: abc 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 3 
+DEBUG (2): 	 Time of reception: 0:1:5.653228768 
+DEBUG (2): 	 The ID of the message is: 0 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): I've received a packet for which the random timer is running 
+DEBUG (2): STOPPING THE RANDOM TIMER.... 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 3 
+DEBUG (1): 	 Time of reception: 0:1:5.653228768 
+DEBUG (1): 	 The ID of the message is: 0 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): 	 I've already received the packet with ID: 0 
+DEBUG (0): 
+DEBUG (0): Packet received by SINK. 
+DEBUG (0): DROPPING THE PACKET... 
+DEBUG (0): 
+DEBUG (0): I'm the SINK and I post a task for sending a broadcast packet 
+DEBUG (0): SENT FROM 0 
+DEBUG (0): Random INT is 248660136 for Packet ID 1 
+DEBUG (0): Try to send a BROADCAST PACKET at time 0:1:58.187500020 
+DEBUG (0): 	 Source: 0 
+DEBUG (0): 	 Packet Type: 6 
+DEBUG (0): 	 Message ID: 1 
+DEBUG (0): 	 Payload: abc 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and I've received a packet from Node 0 
+DEBUG (3): 	 Time of reception: 0:1:58.196868861 
+DEBUG (3): 	 The ID of the message is: 1 
+DEBUG (3): 	 The payload of the packet is: abc 
+DEBUG (3): 	 I've set as TRUE the boolean of packet: 1 
+DEBUG (3): 	 SETTING RANDOM TIMER FOR REFORWARDING... 
+DEBUG (3): The random timer is 1601 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 0 
+DEBUG (2): 	 Time of reception: 0:1:58.196868861 
+DEBUG (2): 	 The ID of the message is: 1 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): 	 I've set as TRUE the boolean of packet: 1 
+DEBUG (2): 	 SETTING RANDOM TIMER FOR REFORWARDING... 
+DEBUG (2): The random timer is 1793 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 0 
+DEBUG (1): 	 Time of reception: 0:1:58.196868861 
+DEBUG (1): 	 The ID of the message is: 1 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): 	 I've set as TRUE the boolean of packet: 1 
+DEBUG (1): 	 SETTING RANDOM TIMER FOR REFORWARDING... 
+DEBUG (1): The random timer is 4430 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and my RANDOM timer has expired. 
+DEBUG (3): Proceeding with a REFORWARDING... 
+DEBUG (3): 
+DEBUG (3): SENT FROM 3 
+DEBUG (3): I'm node 3. Trying to REFORWARD a BROADCAST PACKET at time 0:1:59.759765645 
+DEBUG (3): 	 Source: 3 
+DEBUG (3): 	 Destination: 255 
+DEBUG (3): 	 Packet Type: 6 
+DEBUG (3): 	 Message ID: 1 
+DEBUG (3): 	 Payload: abc 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 3 
+DEBUG (2): 	 Time of reception: 0:1:59.768981899 
+DEBUG (2): 	 The ID of the message is: 1 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): I've received a packet for which the random timer is running 
+DEBUG (2): STOPPING THE RANDOM TIMER.... 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 3 
+DEBUG (1): 	 Time of reception: 0:1:59.768981899 
+DEBUG (1): 	 The ID of the message is: 1 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): I've received a packet for which the random timer is running 
+DEBUG (1): STOPPING THE RANDOM TIMER.... 
+DEBUG (0): 
+DEBUG (0): Packet received by SINK. 
+DEBUG (0): DROPPING THE PACKET... 
+DEBUG (0): 
+DEBUG (0): I'm the SINK and I post a task for sending a broadcast packet 
+DEBUG (0): SENT FROM 0 
+DEBUG (0): Random INT is 248660136 for Packet ID 2 
+DEBUG (0): Try to send a BROADCAST PACKET at time 0:2:56.781250020 
+DEBUG (0): 	 Source: 0 
+DEBUG (0): 	 Packet Type: 6 
+DEBUG (0): 	 Message ID: 2 
+DEBUG (0): 	 Payload: abc 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and I've received a packet from Node 0 
+DEBUG (3): 	 Time of reception: 0:2:56.789901702 
+DEBUG (3): 	 The ID of the message is: 2 
+DEBUG (3): 	 The payload of the packet is: abc 
+DEBUG (3): 	 I've set as TRUE the boolean of packet: 2 
+DEBUG (3): 	 SETTING RANDOM TIMER FOR REFORWARDING... 
+DEBUG (3): The random timer is 2199 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 0 
+DEBUG (1): 	 Time of reception: 0:2:56.789901702 
+DEBUG (1): 	 The ID of the message is: 2 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): 	 I've set as TRUE the boolean of packet: 2 
+DEBUG (1): 	 SETTING RANDOM TIMER FOR REFORWARDING... 
+DEBUG (1): The random timer is 4960 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and my RANDOM timer has expired. 
+DEBUG (3): Proceeding with a REFORWARDING... 
+DEBUG (3): 
+DEBUG (3): SENT FROM 3 
+DEBUG (3): I'm node 3. Trying to REFORWARD a BROADCAST PACKET at time 0:2:58.936523457 
+DEBUG (3): 	 Source: 3 
+DEBUG (3): 	 Destination: 255 
+DEBUG (3): 	 Packet Type: 6 
+DEBUG (3): 	 Message ID: 2 
+DEBUG (3): 	 Payload: abc 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 3 
+DEBUG (2): 	 Time of reception: 0:2:58.938400277 
+DEBUG (2): 	 The ID of the message is: 2 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): 	 I've set as TRUE the boolean of packet: 2 
+DEBUG (2): 	 SETTING RANDOM TIMER FOR REFORWARDING... 
+DEBUG (2): The random timer is 1370 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 3 
+DEBUG (1): 	 Time of reception: 0:2:58.938400277 
+DEBUG (1): 	 The ID of the message is: 2 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): I've received a packet for which the random timer is running 
+DEBUG (1): STOPPING THE RANDOM TIMER.... 
+DEBUG (0): 
+DEBUG (0): Packet received by SINK. 
+DEBUG (0): DROPPING THE PACKET... 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and my RANDOM timer has expired. 
+DEBUG (2): Proceeding with a REFORWARDING... 
+DEBUG (2): 
+DEBUG (2): SENT FROM 2 
+DEBUG (2): I'm node 2. Trying to REFORWARD a BROADCAST PACKET at time 0:3:0.275390645 
+DEBUG (2): 	 Source: 2 
+DEBUG (2): 	 Destination: 255 
+DEBUG (2): 	 Packet Type: 6 
+DEBUG (2): 	 Message ID: 2 
+DEBUG (2): 	 Payload: abc 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and I've received a packet from Node 2 
+DEBUG (3): 	 Time of reception: 0:3:0.283630343 
+DEBUG (3): 	 The ID of the message is: 2 
+DEBUG (3): 	 The payload of the packet is: abc 
+DEBUG (3): 	 I've already received the packet with ID: 2 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 2 
+DEBUG (1): 	 Time of reception: 0:3:0.283630343 
+DEBUG (1): 	 The ID of the message is: 2 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): I've received a packet for which the random timer is running 
+DEBUG (1): STOPPING THE RANDOM TIMER.... 
+DEBUG (0): 
+DEBUG (0): Packet received by SINK. 
+DEBUG (0): DROPPING THE PACKET... 
+DEBUG (0): 
+DEBUG (0): I'm the SINK and I post a task for sending a broadcast packet 
+DEBUG (0): SENT FROM 0 
+DEBUG (0): Random INT is 248660136 for Packet ID 3 
+DEBUG (0): Try to send a BROADCAST PACKET at time 0:3:55.375000020 
+DEBUG (0): 	 Source: 0 
+DEBUG (0): 	 Packet Type: 6 
+DEBUG (0): 	 Message ID: 3 
+DEBUG (0): 	 Payload: abc 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and I've received a packet from Node 0 
+DEBUG (3): 	 Time of reception: 0:3:55.376281750 
+DEBUG (3): 	 The ID of the message is: 3 
+DEBUG (3): 	 The payload of the packet is: abc 
+DEBUG (3): 	 I've set as TRUE the boolean of packet: 3 
+DEBUG (3): 	 SETTING RANDOM TIMER FOR REFORWARDING... 
+DEBUG (3): The random timer is 1824 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 0 
+DEBUG (2): 	 Time of reception: 0:3:55.376281750 
+DEBUG (2): 	 The ID of the message is: 3 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): 	 I've set as TRUE the boolean of packet: 3 
+DEBUG (2): 	 SETTING RANDOM TIMER FOR REFORWARDING... 
+DEBUG (2): The random timer is 2135 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 0 
+DEBUG (1): 	 Time of reception: 0:3:55.376281750 
+DEBUG (1): 	 The ID of the message is: 3 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): 	 I've set as TRUE the boolean of packet: 3 
+DEBUG (1): 	 SETTING RANDOM TIMER FOR REFORWARDING... 
+DEBUG (1): The random timer is 4407 
+DEBUG (3): 
+DEBUG (3): I'm node 3 and my RANDOM timer has expired. 
+DEBUG (3): Proceeding with a REFORWARDING... 
+DEBUG (3): 
+DEBUG (3): SENT FROM 3 
+DEBUG (3): I'm node 3. Trying to REFORWARD a BROADCAST PACKET at time 0:3:57.157226582 
+DEBUG (3): 	 Source: 3 
+DEBUG (3): 	 Destination: 255 
+DEBUG (3): 	 Packet Type: 6 
+DEBUG (3): 	 Message ID: 3 
+DEBUG (3): 	 Payload: abc 
+DEBUG (2): 
+DEBUG (2): I'm node 2 and I've received a packet from Node 3 
+DEBUG (2): 	 Time of reception: 0:3:57.163574201 
+DEBUG (2): 	 The ID of the message is: 3 
+DEBUG (2): 	 The payload of the packet is: abc 
+DEBUG (2): I've received a packet for which the random timer is running 
+DEBUG (2): STOPPING THE RANDOM TIMER.... 
+DEBUG (1): 
+DEBUG (1): I'm node 1 and I've received a packet from Node 3 
+DEBUG (1): 	 Time of reception: 0:3:57.163574201 
+DEBUG (1): 	 The ID of the message is: 3 
+DEBUG (1): 	 The payload of the packet is: abc 
+DEBUG (1): I've received a packet for which the random timer is running 
+DEBUG (1): STOPPING THE RANDOM TIMER.... 
+DEBUG (0): 
+DEBUG (0): Packet received by SINK. 
+DEBUG (0): DROPPING THE PACKET... 
+@@@ SIMULATION FINESHED @@@

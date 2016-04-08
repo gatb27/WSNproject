@@ -8,6 +8,8 @@ print "********************************"
 
 import sys
 import time
+import math
+import array
 from TOSSIM import *
 #from simcore import *
 
@@ -30,6 +32,7 @@ radio = t.radio()
 print "Iniatializing simulator..."
 t.init()
 
+sys.stdout = open('testOut.txt', 'w')
 out = sys.stdout
 
 print "Activate debug message on channel test"
@@ -110,7 +113,7 @@ for line in lines:
         t.getNode(nod).createNoiseModel()
 '''
 
-for i in range (0, 4):
+for i in range (0, nodeNumber):
     print "@@@@@@ Creating noise model for node: ", i
     t.getNode(i).createNoiseModel()
 
@@ -151,7 +154,28 @@ print "Packets sent by node 0 (SINK)"
 print packets[0]
 '''
 
+#DATA ANALYSIS
+sys.stdout = open('testData.txt', 'w')
+packetCount = [0]* nodeNumber
 
+outputData = "testOut.txt"
+f = open(outputData, "r")
+lines = f.readlines()
+for line in lines:
+    s = line.split()
+    if( len(s) > 3):
+        if( s[2] == "SENT" ):
+            print "---------------------START LINE ----"
+            print "Argument 0: ", s[0]
+            print "Argument 1: ", s[1]
+            print "Argument 2: ", s[2]
+            print "Argument 3: ", s[3]
+            print "Argument 4: ", s[4]
+            packetCount[int(s[4])] += 1
+            print "---------------------END LINE -----"
+
+for i in range(0, nodeNumber):
+    print "Packet sent by node ", i, ": ", packetCount[i]
 
 
 

@@ -126,6 +126,10 @@ implementation{
 					//Now it has to define a random timer and then start it
 
 					randomTimer = call Random.rand32() % 5000;
+					if(randomTimer < 1000){
+					 randomTimer = randomTimer + 1234;
+					}
+
 
 					dbg("recv", "The random timer is %d \n", randomTimer);
 					call RandomTimer.startOneShot(randomTimer);
@@ -160,7 +164,7 @@ implementation{
 		my_msg_t* msg=(my_msg_t*)(call RadioPacket.getPayload(&packet, sizeof(my_msg_t)));
 		msg->msg_id = counter++;
 		//*(msg->payload) = call Random.rand16();
-		strcpy(msg->payload, "a");
+		strcpy(msg->payload, STRINGPAYLOAD);
 		dbg("sink", "Random INT is %d for Packet ID %d \n", msg->payload, msg->msg_id);
 
 		dbg("sink", "Try to send a BROADCAST PACKET at time %s \n", sim_time_string());

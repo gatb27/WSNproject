@@ -126,6 +126,10 @@ implementation{
 					//Now it has to define a random timer and then start it
 
 					randomTimer = call Random.rand32() % 5000;
+					if(randomTimer < 1000){
+					 randomTimer = randomTimer + 1234;
+					}
+
 
 					dbg("recv", "The random timer is %d \n", randomTimer);
 					call RandomTimer.startOneShot(randomTimer);
@@ -161,6 +165,7 @@ implementation{
 		msg->msg_id = counter++;
 		//*(msg->payload) = call Random.rand16();
 		strcpy(msg->payload, STRINGPAYLOAD);
+		dbg("sink", "SENT FROM %d \n", TOS_NODE_ID);
 		dbg("sink", "Random INT is %d for Packet ID %d \n", msg->payload, msg->msg_id);
 
 		dbg("sink", "Try to send a BROADCAST PACKET at time %s \n", sim_time_string());
@@ -183,6 +188,7 @@ implementation{
 		memcpy(msg->payload, temp_payload, sizeof(nx_uint8_t)*DIMPAYLOAD);
 
 		dbg("forw", "\n");
+		dbg("forw", "SENT FROM %d \n", TOS_NODE_ID);
 		dbg("forw", "I'm node %d. Trying to REFORWARD a BROADCAST PACKET at time %s \n", TOS_NODE_ID, sim_time_string());
 		if(call RadioAMSend.send(AM_BROADCAST_ADDR, &packet, sizeof(my_msg_t)) == SUCCESS){
 			dbg("radio_pack", "\t Source: %hhu \n", call AMPacket.source(&packet));

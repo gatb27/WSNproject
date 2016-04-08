@@ -8,6 +8,8 @@ print "********************************"
 
 import sys
 import time
+import math
+import array
 from TOSSIM import *
 #from simcore import *
 
@@ -30,6 +32,7 @@ radio = t.radio()
 print "Iniatializing simulator..."
 t.init()
 
+sys.stdout = open('testOut.txt', 'w')
 out = sys.stdout
 
 print "Activate debug message on channel test"
@@ -110,7 +113,7 @@ for line in lines:
         t.getNode(nod).createNoiseModel()
 '''
 
-for i in range (0, 4):
+for i in range (0, nodeNumber):
     print "@@@@@@ Creating noise model for node: ", i
     t.getNode(i).createNoiseModel()
 
@@ -137,7 +140,7 @@ for i in range(0,50000):
         sf.process()
 '''
 
-for i in range(1000):
+for i in range(10000):
 	t.runNextEvent()
 	#print "Value of i: ", i  
 

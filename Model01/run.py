@@ -11,10 +11,17 @@ import time
 import math
 import array
 from TOSSIM import *
+from tinyos.tossim.TossimApp import *
 
 
 #simulation variable
-t = Tossim([])
+n = NescApp()
+vars = n.variables.variables()
+#t = Tossim([])
+t = Tossim(vars)
+m = t.getNode(0)
+v = m.getVariable("FloodingPartC.sinkCounter")
+counter = v.getData()
 #sf = SerialForwarder(9001)
 #throttle = Throttle(t,10)
 #sf_throttle=True
@@ -33,7 +40,7 @@ print "Iniatializing simulator..."
 t.init()
 
 sys.stdout = open('testOut.txt', 'w')
-print "test line for external file2"
+#print "test line for external file2"
 
 out = sys.stdout
 
@@ -128,7 +135,7 @@ for line in lines:
         t.getNode(nod).createNoiseModel()
 '''
 
-for i in range (0, 4):
+for i in range (0, nodeNumber):
     print "@@@@@@ Creating noise model for node: ", i
     t.getNode(i).createNoiseModel()
 
@@ -158,6 +165,16 @@ for i in range(0,50000):
 for i in range(10000):
 	t.runNextEvent()
 	#print "Value of i: ", i  
+
+
+'''
+while (counter < 11):
+    print "The value of sinkCounter is: ", counter
+    t.runNextEvent()
+
+print "10 Packets were sent by the SINK"
+'''
+
 
 
 print "@@@ SIMULATION FINESHED @@@"

@@ -28,7 +28,7 @@ implementation{
 	task void broadcastSink();
 	task void broadcastNode();
 
-    uint8_t sinkCounter=0;
+    uint16_t sinkCounter=0;
 
 	//----------- BOOT ------------
 	//call start() on the SpliControl that is wired to ActiveMessageC
@@ -98,8 +98,10 @@ implementation{
 		}
 		else{
 			dbg("recv","\n");
+			
 			dbg("recv", "I'm node %d and I've received a packet from Node %d \n", TOS_NODE_ID, call AMPacket.source(buf));
 			dbg("recv", "\t Time of reception: %s \n", sim_time_string());
+			//dbg("recv", "\t Size of the packet: %hhu \n", sizeof(buf));
 
 			//check the content of the packet
 			recv_msg = (my_msg_t*)payload;
@@ -107,6 +109,9 @@ implementation{
 
 			//dbg("recv", "\t The TYPE of the message is: %hhu \n", recv_msg->msg_type);
 			dbg("recv", "\t The ID of the message is: %hhu \n", recv_msg->msg_id);
+			
+			dbg("recv", "RECV FROM %d PACKET %hhu \n", TOS_NODE_ID, recv_msg->msg_ig);	
+			
 			dbg("recv", "\t The payload of the packet is: %s \n", recv_msg->payload);
 
 			//Node check is it has already received the packed ID. If not, put TRUE the boolean
@@ -140,6 +145,7 @@ implementation{
 
 		dbg("sink", "Try to send a BROADCAST PACKET at time %s \n", sim_time_string());
 		if(call RadioAMSend.send(AM_BROADCAST_ADDR, &packet, sizeof(my_msg_t)) == SUCCESS){
+			dbg("radio_pack", "\t Packet dimension: %hhu \n", sizeof(my_msg_t));
 			dbg("radio_pack", "\t Source: %hhu \n", call AMPacket.source(&packet));
 			dbg("radio_pack", "\t Destination: %hhu \n", call AMPacket.destination(&packet));
 			dbg("radio_pack", "\t Packet Type: %hhu \n", call AMPacket.type(&packet));
@@ -161,6 +167,7 @@ implementation{
 		dbg("forw", "SENT FROM %d \n", TOS_NODE_ID);
 		dbg("forw", "I'm node %d. Trying to REFORWARD a BROADCAST PACKET at time %s \n", TOS_NODE_ID, sim_time_string());
 		if(call RadioAMSend.send(AM_BROADCAST_ADDR, &packet, sizeof(my_msg_t)) == SUCCESS){
+			dbg("radio_pack", "\t Packet dimension: %hhu \n", sizeof(my_msg_t));
 			dbg("radio_pack", "\t Source: %hhu \n", call AMPacket.source(&packet));
 			dbg("radio_pack", "\t Destination: %hhu \n", call AMPacket.destination(&packet));
 			dbg("radio_pack", "\t Packet Type: %hhu \n", call AMPacket.type(&packet));

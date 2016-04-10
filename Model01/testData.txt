@@ -1,135 +1,138 @@
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (0):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  0
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (8):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  8
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (1):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  1
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (3):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  3
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (7):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  7
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (4):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  4
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (6):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  6
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (5):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  5
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (2):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  2
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (0):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  0
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (3):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  3
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (5):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  5
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (8):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  8
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (2):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  2
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (1):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  1
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (4):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  4
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (6):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  6
----------------------END LINE -----
----------------------START LINE ----
-Argument 0:  DEBUG
-Argument 1:  (7):
-Argument 2:  SENT
-Argument 3:  FROM
-Argument 4:  7
----------------------END LINE -----
-Packet sent by node  0 :  2
-Packet sent by node  1 :  2
-Packet sent by node  2 :  2
-Packet sent by node  3 :  2
-Packet sent by node  4 :  2
-Packet sent by node  5 :  2
-Packet sent by node  6 :  2
-Packet sent by node  7 :  2
-Packet sent by node  8 :  2
+Packet sent by node  0 :  95
+Packet recv by node  0 :  0
+Packet sent by node  1 :  23
+Packet recv by node  1 :  64
+Packet sent by node  2 :  12
+Packet recv by node  2 :  26
+Packet sent by node  3 :  10
+Packet recv by node  3 :  19
+Packet sent by node  4 :  22
+Packet recv by node  4 :  65
+Packet sent by node  5 :  31
+Packet recv by node  5 :  81
+Packet sent by node  6 :  14
+Packet recv by node  6 :  38
+Packet sent by node  7 :  11
+Packet recv by node  7 :  24
+Packet sent by node  8 :  15
+Packet recv by node  8 :  22
+Packet sent by node  9 :  13
+Packet recv by node  9 :  35
+Packet sent by node  10 :  16
+Packet recv by node  10 :  37
+Packet sent by node  11 :  10
+Packet recv by node  11 :  21
+Packet sent by node  12 :  7
+Packet recv by node  12 :  7
+Packet sent by node  13 :  9
+Packet recv by node  13 :  14
+Packet sent by node  14 :  7
+Packet recv by node  14 :  13
+Packet sent by node  15 :  9
+Packet recv by node  15 :  11
+[[0 0 0 ..., 0 0 0]
+ [0 1 0 ..., 0 0 0]
+ [0 0 0 ..., 0 0 0]
+ ..., 
+ [0 1 0 ..., 1 0 0]
+ [0 1 0 ..., 0 0 0]
+ [0 1 0 ..., 0 0 0]]
+
+------------------DATA ANALYSIS -------------------------
+Number of packets used to flood the network:  304
+Percentage of node that actually received the flooded data
+Packet  0  was received by:  0.0 % of nodes
+Packet  1  was received by:  13.336 % of nodes
+Packet  2  was received by:  6.668 % of nodes
+Packet  3  was received by:  46.656 % of nodes
+Packet  4  was received by:  0.0 % of nodes
+Packet  5  was received by:  60.0 % of nodes
+Packet  6  was received by:  0.0 % of nodes
+Packet  7  was received by:  60.0 % of nodes
+Packet  8  was received by:  60.0 % of nodes
+Packet  9  was received by:  0.0 % of nodes
+Packet  10  was received by:  6.668 % of nodes
+Packet  11  was received by:  13.336 % of nodes
+Packet  12  was received by:  46.656 % of nodes
+Packet  13  was received by:  46.656 % of nodes
+Packet  14  was received by:  60.0 % of nodes
+Packet  15  was received by:  26.672 % of nodes
+Packet  16  was received by:  0.0 % of nodes
+Packet  17  was received by:  6.668 % of nodes
+Packet  18  was received by:  26.672 % of nodes
+Packet  19  was received by:  13.336 % of nodes
+Packet  20  was received by:  6.668 % of nodes
+Packet  21  was received by:  0.0 % of nodes
+Packet  22  was received by:  46.656 % of nodes
+Packet  23  was received by:  13.336 % of nodes
+Packet  24  was received by:  0.0 % of nodes
+Packet  25  was received by:  53.344 % of nodes
+Packet  26  was received by:  0.0 % of nodes
+Packet  27  was received by:  20.0 % of nodes
+Packet  28  was received by:  6.668 % of nodes
+Packet  29  was received by:  0.0 % of nodes
+Packet  30  was received by:  26.672 % of nodes
+Packet  31  was received by:  6.668 % of nodes
+Packet  32  was received by:  60.0 % of nodes
+Packet  33  was received by:  6.668 % of nodes
+Packet  34  was received by:  6.668 % of nodes
+Packet  35  was received by:  0.0 % of nodes
+Packet  36  was received by:  6.668 % of nodes
+Packet  37  was received by:  6.668 % of nodes
+Packet  38  was received by:  0.0 % of nodes
+Packet  39  was received by:  0.0 % of nodes
+Packet  40  was received by:  53.344 % of nodes
+Packet  41  was received by:  26.672 % of nodes
+Packet  42  was received by:  6.668 % of nodes
+Packet  43  was received by:  6.668 % of nodes
+Packet  44  was received by:  53.344 % of nodes
+Packet  45  was received by:  0.0 % of nodes
+Packet  46  was received by:  53.344 % of nodes
+Packet  47  was received by:  6.668 % of nodes
+Packet  48  was received by:  20.0 % of nodes
+Packet  49  was received by:  80.0 % of nodes
+Packet  50  was received by:  20.0 % of nodes
+Packet  51  was received by:  13.336 % of nodes
+Packet  52  was received by:  0.0 % of nodes
+Packet  53  was received by:  6.668 % of nodes
+Packet  54  was received by:  33.344 % of nodes
+Packet  55  was received by:  26.672 % of nodes
+Packet  56  was received by:  0.0 % of nodes
+Packet  57  was received by:  0.0 % of nodes
+Packet  58  was received by:  6.668 % of nodes
+Packet  59  was received by:  46.656 % of nodes
+Packet  60  was received by:  6.668 % of nodes
+Packet  61  was received by:  6.668 % of nodes
+Packet  62  was received by:  6.668 % of nodes
+Packet  63  was received by:  6.668 % of nodes
+Packet  64  was received by:  6.668 % of nodes
+Packet  65  was received by:  0.0 % of nodes
+Packet  66  was received by:  6.668 % of nodes
+Packet  67  was received by:  6.668 % of nodes
+Packet  68  was received by:  13.336 % of nodes
+Packet  69  was received by:  13.336 % of nodes
+Packet  70  was received by:  6.668 % of nodes
+Packet  71  was received by:  0.0 % of nodes
+Packet  72  was received by:  13.336 % of nodes
+Packet  73  was received by:  6.668 % of nodes
+Packet  74  was received by:  6.668 % of nodes
+Packet  75  was received by:  20.0 % of nodes
+Packet  76  was received by:  66.688 % of nodes
+Packet  77  was received by:  80.0 % of nodes
+Packet  78  was received by:  0.0 % of nodes
+Packet  79  was received by:  0.0 % of nodes
+Packet  80  was received by:  66.688 % of nodes
+Packet  81  was received by:  13.336 % of nodes
+Packet  82  was received by:  6.668 % of nodes
+Packet  83  was received by:  60.0 % of nodes
+Packet  84  was received by:  26.672 % of nodes
+Packet  85  was received by:  6.668 % of nodes
+Packet  86  was received by:  0.0 % of nodes
+Packet  87  was received by:  60.0 % of nodes
+Packet  88  was received by:  0.0 % of nodes
+Packet  89  was received by:  6.668 % of nodes
+Packet  90  was received by:  46.656 % of nodes
+Packet  91  was received by:  0.0 % of nodes
+Packet  92  was received by:  33.344 % of nodes
+Packet  93  was received by:  13.336 % of nodes
+Packet  94  was received by:  20.0 % of nodes

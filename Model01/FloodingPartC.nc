@@ -1,6 +1,9 @@
 #include "Timer.h"
 #include "flooding.h"test
 
+
+
+
 module FloodingPartC @safe() {
 	uses{
 		interface Boot;
@@ -21,7 +24,9 @@ implementation{
 	my_msg_t* recv_msg;
 	uint16_t counter=0; //for ID of packets sent from SINK very 60sec
 	uint16_t recv_id=0;
-	bool recv_pack[500];
+	bool recv_pack[255];
+
+
 	nx_uint16_t temp_id;
 	nx_uint8_t temp_payload[DIMPAYLOAD];
 
@@ -133,6 +138,34 @@ implementation{
 
 		return buf;
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	//---------- TASK FOR SENDING BROADCAST PACKET -----------
 	task void broadcastSink(){

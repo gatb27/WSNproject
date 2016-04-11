@@ -12,14 +12,11 @@ import math
 import numpy as np
 import array
 from TOSSIM import *
-#from simcore import *
+from tinyos.tossim.TossimApp import *
 
 #simulation variable
-t = Tossim([])
-#sf = SerialForwarder(9001)
-#throttle = Throttle(t,10)
-#sf_throttle=True
-#sf_process=True
+n = NescApp()
+t = Tossim(n.variables.variables())
 
 #Import file .out create with -> java net.tinyos.sim.LinkLayerModel config.txt
 topology="topology.out"
@@ -45,16 +42,7 @@ t.addChannel("recv", out)
 t.addChannel("forw", out)
 t.addChannel("timer", out)
 
-#Creating Nodes manually
-#for i in range (0,3):
-#    print "Creating node: ", i
-#    node1 = t.getNode(i)
-#    time1 = (1)*t.ticksPerSecond()
-#    node1.bootAtTime(time1)
-#    print "I'll boot at time: ", time1/t.ticksPerSecond(), "[sec]
-
 #Create nodes looking at topology.out file
-
 f = open(topology, "r")
 lines = f.readlines()
 for line in lines:
@@ -77,7 +65,7 @@ for line in lines:
             print "Setting radio channel from node ", s[1], " to node ", s[2], " with gain ", s[3], "dBm"
             radio.add(int(s[1]), int(s[2]), float(s[3]))
 
-
+#Adding Noise Trace Reading using meyer-heavy
 meyer = open("meyer-heavy.txt", "r")
 for line in meyer:
   s = line.strip()
@@ -97,10 +85,6 @@ for line in lines:
             t.getNode(int(s[1])).addNoiseTraceReading(float(s[2]))
             t.getNode(int(s[1])).addNoiseTraceReading(float(s[3]))
 '''
-
-
-
-
 
 '''
 #Create noise model
@@ -126,34 +110,24 @@ print "      START TOSSIM SIMULATION PART            "
 print "                                              "
 print "----------------------------------------------"
 
-#Only if we hve to use the serial port
-'''
-if (sf_process == True):
-    sf.process()
-if (sf_throttle == True):
-    throttle.initialize()
+m = t.getNode(0)
+v = m.getVariable("FloodingPartC.sinkCounter")
+counter = v.getData()
 
-for i in range(0,50000):
-    t.runNextEvent()
-    if (sf_throttle == True):
-        throttle.checkThrottle()
-    if (sf_process == True):
-        sf.process()
 '''
-
 for i in range(280000):
 	t.runNextEvent()
-	#print "Value of i: ", i  
+'''
 
+while (counter < 251):
+    t.runNextEvent()
+    counter = v.getData()
+    if ( counter == 250):
+        print "250 Packets were sent by the SINK"
 
 print "@@@ SIMULATION FINESHED @@@"
 #throttle.printStatistics()
 
-'''
-print "-----> SIMULATION STATISTICS: "
-print "Packets sent by node 0 (SINK)"
-print packets[0]
-'''
 
 #DATA ANALYSIS
 sys.stdout = open('testData.txt', 'w')
@@ -200,7 +174,7 @@ for line in lines:
             #print "Argument 5: ", s[5]
             #print "Argument 6: ", s[6]
             recv[int(s[6])][int(s[4])] = 1
-print recv
+#print recv
 
 
 print ""

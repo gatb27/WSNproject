@@ -1,7 +1,7 @@
   #ifndef FLOODING_H
   #define FLOODING_H
 
-  #define DIMPAYLOAD 4
+  #define DIMPAYLOAD 2
   #define STRINGPAYLOAD "abc"
   
   typedef nx_struct my_msg{

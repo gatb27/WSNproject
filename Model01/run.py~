@@ -14,19 +14,9 @@ import array
 from TOSSIM import *
 from tinyos.tossim.TossimApp import *
 
-
 #simulation variable
 n = NescApp()
-#vars = n.variables.variables()
-#t = Tossim([])
 t = Tossim(n.variables.variables())
-
-#sf = SerialForwarder(9001)
-#throttle = Throttle(t,10)
-#sf_throttle=True
-#sf_process=True
-
-#print "INITIAL VALUE OF IMPORTED VARIABLE: ", counter
 
 #Import file .out create with -> java net.tinyos.sim.LinkLayerModel config.txt
 topology="topology.out"
@@ -41,11 +31,7 @@ print "Iniatializing simulator..."
 t.init()
 
 sys.stdout = open('testOut.txt', 'w')
-#print "test line for external file2"
-
 out = sys.stdout
-
-
 
 print "Activate debug message on channel test"
 t.addChannel("test", out)
@@ -56,16 +42,7 @@ t.addChannel("recv", out)
 t.addChannel("forw", out)
 t.addChannel("timer", out)
 
-#Creating Nodes manually
-#for i in range (0,3):
-#    print "Creating node: ", i
-#    node1 = t.getNode(i)
-#    time1 = (1)*t.ticksPerSecond()
-#    node1.bootAtTime(time1)
-#    print "I'll boot at time: ", time1/t.ticksPerSecond(), "[sec]
-
 #Create nodes looking at topology.out file
-
 f = open(topology, "r")
 lines = f.readlines()
 for line in lines:
@@ -88,8 +65,7 @@ for line in lines:
             print "Setting radio channel from node ", s[1], " to node ", s[2], " with gain ", s[3], "dBm"
             radio.add(int(s[1]), int(s[2]), float(s[3]))
 
-
-
+#Adding Noise Trace Reading using meyer-heavy
 meyer = open("meyer-heavy.txt", "r")
 for line in meyer:
   s = line.strip()
@@ -98,29 +74,17 @@ for line in meyer:
     for i in range(0, nodeNumber):
       t.getNode(i).addNoiseTraceReading(val)
 
-
 '''
 #Add noise model looking at linkgain.out file
-val = 0
-vall = 0
 f = open(modelfile, "r")
 lines = f.readlines()
 for line in lines:
     s = line.split()
     if (len(s) > 0):
         if (s[0] == "noise"):
-            val = int(float(s[2]))
-            #vall = int(float(s[3]))
-            #val = int(math.floor(val))
-            print val
             t.getNode(int(s[1])).addNoiseTraceReading(val)
             #t.getNode(int(s[1])).addNoiseTraceReading(vall)
 '''
-
-
-
-
-
 
 '''
 #Create noise model
@@ -149,38 +113,20 @@ print "----------------------------------------------"
 m = t.getNode(0)
 v = m.getVariable("FloodingPartC.sinkCounter")
 counter = v.getData()
-#print "@@@@@", counter
-
 
 '''
 for i in range(30000):
     t.runNextEvent()
-    counter = v.getData()
-    print "Counter of SINK: ", counter
-	#print "Value of i: ", i  
 '''
 
 while (counter < 251):
-    #print "The value of sinkCounter is: ", counter
     t.runNextEvent()
     counter = v.getData()
-
-print "100 Packets were sent by the SINK"
-
-
-
+    if(counter=250):
+        print "250 Packets were sent by the SINK"
 
 print "@@@ SIMULATION FINESHED @@@"
 #throttle.printStatistics()
-
-
-'''
-print "-----> SIMULATION STATISTICS: "
-print "Packets sent by node 0 (SINK)"
-print packets[0]
-'''
-
-
 
 
 #DATA ANALYSIS
@@ -188,7 +134,6 @@ sys.stdout = open('testData.txt', 'w')
 packetSent = [0] * nodeNumber
 packetRecv = [0] * nodeNumber
 totalPackets = 0
-
 
 
 outputData = "testOut.txt"
@@ -210,8 +155,8 @@ for line in lines:
             #print "---------------------END LINE -----"
 
 for i in range(0, nodeNumber):
-    #print "Packet sent by node ", i, ": ", packetSent[i]
-    #print "Packet recv by node ", i, ": ", packetRecv[i]
+    print "Packet sent by node ", i, ": ", packetSent[i]
+    print "Packet recv by node ", i, ": ", packetRecv[i]
     totalPackets = totalPackets + packetSent[i]
 
 

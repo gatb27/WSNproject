@@ -1,0 +1,357 @@
+Packet sent by node  0 :  250
+Packet recv by node  0 :  0
+Packet sent by node  1 :  189
+Packet recv by node  1 :  513
+Packet sent by node  2 :  184
+Packet recv by node  2 :  556
+Packet sent by node  3 :  171
+Packet recv by node  3 :  497
+Packet sent by node  4 :  145
+Packet recv by node  4 :  327
+Packet sent by node  5 :  94
+Packet recv by node  5 :  208
+Packet sent by node  6 :  110
+Packet recv by node  6 :  233
+Packet sent by node  7 :  134
+Packet recv by node  7 :  387
+Packet sent by node  8 :  185
+Packet recv by node  8 :  644
+Packet sent by node  9 :  190
+Packet recv by node  9 :  565
+Packet sent by node  10 :  188
+Packet recv by node  10 :  613
+Packet sent by node  11 :  178
+Packet recv by node  11 :  562
+Packet sent by node  12 :  165
+Packet recv by node  12 :  459
+Packet sent by node  13 :  160
+Packet recv by node  13 :  462
+Packet sent by node  14 :  148
+Packet recv by node  14 :  453
+Packet sent by node  15 :  173
+Packet recv by node  15 :  555
+Packet sent by node  16 :  175
+Packet recv by node  16 :  569
+Packet sent by node  17 :  137
+Packet recv by node  17 :  500
+Packet sent by node  18 :  157
+Packet recv by node  18 :  687
+Packet sent by node  19 :  174
+Packet recv by node  19 :  497
+Packet sent by node  20 :  173
+Packet recv by node  20 :  553
+Packet sent by node  21 :  138
+Packet recv by node  21 :  401
+Packet sent by node  22 :  162
+Packet recv by node  22 :  549
+Packet sent by node  23 :  159
+Packet recv by node  23 :  557
+Packet sent by node  24 :  146
+Packet recv by node  24 :  487
+Packet sent by node  25 :  137
+Packet recv by node  25 :  502
+Packet sent by node  26 :  175
+Packet recv by node  26 :  607
+Packet sent by node  27 :  175
+Packet recv by node  27 :  491
+Packet sent by node  28 :  130
+Packet recv by node  28 :  368
+Packet sent by node  29 :  142
+Packet recv by node  29 :  453
+Packet sent by node  30 :  145
+Packet recv by node  30 :  518
+Packet sent by node  31 :  149
+Packet recv by node  31 :  558
+Packet sent by node  32 :  176
+Packet recv by node  32 :  569
+Packet sent by node  33 :  171
+Packet recv by node  33 :  642
+Packet sent by node  34 :  129
+Packet recv by node  34 :  337
+Packet sent by node  35 :  134
+Packet recv by node  35 :  356
+Packet sent by node  36 :  136
+Packet recv by node  36 :  421
+Packet sent by node  37 :  135
+Packet recv by node  37 :  467
+Packet sent by node  38 :  156
+Packet recv by node  38 :  527
+Packet sent by node  39 :  170
+Packet recv by node  39 :  565
+Packet sent by node  40 :  167
+Packet recv by node  40 :  515
+Packet sent by node  41 :  119
+Packet recv by node  41 :  297
+Packet sent by node  42 :  155
+Packet recv by node  42 :  331
+Packet sent by node  43 :  159
+Packet recv by node  43 :  513
+Packet sent by node  44 :  120
+Packet recv by node  44 :  375
+Packet sent by node  45 :  158
+Packet recv by node  45 :  459
+Packet sent by node  46 :  131
+Packet recv by node  46 :  408
+Packet sent by node  47 :  109
+Packet recv by node  47 :  212
+Packet sent by node  48 :  80
+Packet recv by node  48 :  144
+
+------------------DATA ANALYSIS -------------------------
+Number of packets used to flood the network:  7543
+                                                               
+Percentage of node that actually received the flooded data
+Packet  0  was received by:  68.75 % of nodes
+Packet  1  was received by:  77.062 % of nodes
+Packet  2  was received by:  72.938 % of nodes
+Packet  3  was received by:  0.0 % of nodes
+Packet  4  was received by:  72.938 % of nodes
+Packet  5  was received by:  85.438 % of nodes
+Packet  6  was received by:  85.438 % of nodes
+Packet  7  was received by:  83.312 % of nodes
+Packet  8  was received by:  0.0 % of nodes
+Packet  9  was received by:  79.188 % of nodes
+Packet  10  was received by:  79.188 % of nodes
+Packet  11  was received by:  85.438 % of nodes
+Packet  12  was received by:  0.0 % of nodes
+Packet  13  was received by:  89.562 % of nodes
+Packet  14  was received by:  0.0 % of nodes
+Packet  15  was received by:  81.25 % of nodes
+Packet  16  was received by:  0.0 % of nodes
+Packet  17  was received by:  87.5 % of nodes
+Packet  18  was received by:  91.688 % of nodes
+Packet  19  was received by:  70.812 % of nodes
+Packet  20  was received by:  75.0 % of nodes
+Packet  21  was received by:  77.062 % of nodes
+Packet  22  was received by:  85.438 % of nodes
+Packet  23  was received by:  62.5 % of nodes
+Packet  24  was received by:  0.0 % of nodes
+Packet  25  was received by:  75.0 % of nodes
+Packet  26  was received by:  75.0 % of nodes
+Packet  27  was received by:  79.188 % of nodes
+Packet  28  was received by:  0.0 % of nodes
+Packet  29  was received by:  87.5 % of nodes
+Packet  30  was received by:  77.062 % of nodes
+Packet  31  was received by:  0.0 % of nodes
+Packet  32  was received by:  83.312 % of nodes
+Packet  33  was received by:  0.0 % of nodes
+Packet  34  was received by:  85.438 % of nodes
+Packet  35  was received by:  91.688 % of nodes
+Packet  36  was received by:  83.312 % of nodes
+Packet  37  was received by:  91.688 % of nodes
+Packet  38  was received by:  81.25 % of nodes
+Packet  39  was received by:  83.312 % of nodes
+Packet  40  was received by:  72.938 % of nodes
+Packet  41  was received by:  0.0 % of nodes
+Packet  42  was received by:  75.0 % of nodes
+Packet  43  was received by:  77.062 % of nodes
+Packet  44  was received by:  79.188 % of nodes
+Packet  45  was received by:  81.25 % of nodes
+Packet  46  was received by:  83.312 % of nodes
+Packet  47  was received by:  0.0 % of nodes
+Packet  48  was received by:  0.0 % of nodes
+Packet  49  was received by:  0.0 % of nodes
+Packet  50  was received by:  85.438 % of nodes
+Packet  51  was received by:  79.188 % of nodes
+Packet  52  was received by:  89.562 % of nodes
+Packet  53  was received by:  89.562 % of nodes
+Packet  54  was received by:  87.5 % of nodes
+Packet  55  was received by:  89.562 % of nodes
+Packet  56  was received by:  70.812 % of nodes
+Packet  57  was received by:  0.0 % of nodes
+Packet  58  was received by:  85.438 % of nodes
+Packet  59  was received by:  72.938 % of nodes
+Packet  60  was received by:  79.188 % of nodes
+Packet  61  was received by:  68.75 % of nodes
+Packet  62  was received by:  0.0 % of nodes
+Packet  63  was received by:  0.0 % of nodes
+Packet  64  was received by:  87.5 % of nodes
+Packet  65  was received by:  0.0 % of nodes
+Packet  66  was received by:  0.0 % of nodes
+Packet  67  was received by:  83.312 % of nodes
+Packet  68  was received by:  79.188 % of nodes
+Packet  69  was received by:  0.0 % of nodes
+Packet  70  was received by:  0.0 % of nodes
+Packet  71  was received by:  85.438 % of nodes
+Packet  72  was received by:  79.188 % of nodes
+Packet  73  was received by:  83.312 % of nodes
+Packet  74  was received by:  85.438 % of nodes
+Packet  75  was received by:  83.312 % of nodes
+Packet  76  was received by:  79.188 % of nodes
+Packet  77  was received by:  75.0 % of nodes
+Packet  78  was received by:  81.25 % of nodes
+Packet  79  was received by:  81.25 % of nodes
+Packet  80  was received by:  0.0 % of nodes
+Packet  81  was received by:  77.062 % of nodes
+Packet  82  was received by:  70.812 % of nodes
+Packet  83  was received by:  0.0 % of nodes
+Packet  84  was received by:  72.938 % of nodes
+Packet  85  was received by:  0.0 % of nodes
+Packet  86  was received by:  85.438 % of nodes
+Packet  87  was received by:  64.562 % of nodes
+Packet  88  was received by:  87.5 % of nodes
+Packet  89  was received by:  81.25 % of nodes
+Packet  90  was received by:  85.438 % of nodes
+Packet  91  was received by:  79.188 % of nodes
+Packet  92  was received by:  68.75 % of nodes
+Packet  93  was received by:  0.0 % of nodes
+Packet  94  was received by:  77.062 % of nodes
+Packet  95  was received by:  75.0 % of nodes
+Packet  96  was received by:  87.5 % of nodes
+Packet  97  was received by:  0.0 % of nodes
+Packet  98  was received by:  83.312 % of nodes
+Packet  99  was received by:  70.812 % of nodes
+Packet  100  was received by:  85.438 % of nodes
+Packet  101  was received by:  83.312 % of nodes
+Packet  102  was received by:  0.0 % of nodes
+Packet  103  was received by:  75.0 % of nodes
+Packet  104  was received by:  87.5 % of nodes
+Packet  105  was received by:  64.562 % of nodes
+Packet  106  was received by:  68.75 % of nodes
+Packet  107  was received by:  81.25 % of nodes
+Packet  108  was received by:  68.75 % of nodes
+Packet  109  was received by:  68.75 % of nodes
+Packet  110  was received by:  75.0 % of nodes
+Packet  111  was received by:  77.062 % of nodes
+Packet  112  was received by:  91.688 % of nodes
+Packet  113  was received by:  79.188 % of nodes
+Packet  114  was received by:  81.25 % of nodes
+Packet  115  was received by:  79.188 % of nodes
+Packet  116  was received by:  87.5 % of nodes
+Packet  117  was received by:  0.0 % of nodes
+Packet  118  was received by:  70.812 % of nodes
+Packet  119  was received by:  62.5 % of nodes
+Packet  120  was received by:  81.25 % of nodes
+Packet  121  was received by:  77.062 % of nodes
+Packet  122  was received by:  70.812 % of nodes
+Packet  123  was received by:  79.188 % of nodes
+Packet  124  was received by:  77.062 % of nodes
+Packet  125  was received by:  0.0 % of nodes
+Packet  126  was received by:  89.562 % of nodes
+Packet  127  was received by:  58.344 % of nodes
+Packet  128  was received by:  29.172 % of nodes
+Packet  129  was received by:  0.0 % of nodes
+Packet  130  was received by:  83.312 % of nodes
+Packet  131  was received by:  93.75 % of nodes
+Packet  132  was received by:  66.688 % of nodes
+Packet  133  was received by:  83.312 % of nodes
+Packet  134  was received by:  87.5 % of nodes
+Packet  135  was received by:  0.0 % of nodes
+Packet  136  was received by:  0.0 % of nodes
+Packet  137  was received by:  93.75 % of nodes
+Packet  138  was received by:  85.438 % of nodes
+Packet  139  was received by:  75.0 % of nodes
+Packet  140  was received by:  70.812 % of nodes
+Packet  141  was received by:  64.562 % of nodes
+Packet  142  was received by:  77.062 % of nodes
+Packet  143  was received by:  81.25 % of nodes
+Packet  144  was received by:  0.0 % of nodes
+Packet  145  was received by:  0.0 % of nodes
+Packet  146  was received by:  70.812 % of nodes
+Packet  147  was received by:  70.812 % of nodes
+Packet  148  was received by:  56.25 % of nodes
+Packet  149  was received by:  77.062 % of nodes
+Packet  150  was received by:  68.75 % of nodes
+Packet  151  was received by:  85.438 % of nodes
+Packet  152  was received by:  83.312 % of nodes
+Packet  153  was received by:  79.188 % of nodes
+Packet  154  was received by:  72.938 % of nodes
+Packet  155  was received by:  79.188 % of nodes
+Packet  156  was received by:  85.438 % of nodes
+Packet  157  was received by:  79.188 % of nodes
+Packet  158  was received by:  66.688 % of nodes
+Packet  159  was received by:  77.062 % of nodes
+Packet  160  was received by:  2.084 % of nodes
+Packet  161  was received by:  77.062 % of nodes
+Packet  162  was received by:  77.062 % of nodes
+Packet  163  was received by:  0.0 % of nodes
+Packet  164  was received by:  70.812 % of nodes
+Packet  165  was received by:  83.312 % of nodes
+Packet  166  was received by:  85.438 % of nodes
+Packet  167  was received by:  0.0 % of nodes
+Packet  168  was received by:  83.312 % of nodes
+Packet  169  was received by:  0.0 % of nodes
+Packet  170  was received by:  0.0 % of nodes
+Packet  171  was received by:  0.0 % of nodes
+Packet  172  was received by:  77.062 % of nodes
+Packet  173  was received by:  87.5 % of nodes
+Packet  174  was received by:  0.0 % of nodes
+Packet  175  was received by:  0.0 % of nodes
+Packet  176  was received by:  79.188 % of nodes
+Packet  177  was received by:  66.688 % of nodes
+Packet  178  was received by:  81.25 % of nodes
+Packet  179  was received by:  0.0 % of nodes
+Packet  180  was received by:  85.438 % of nodes
+Packet  181  was received by:  81.25 % of nodes
+Packet  182  was received by:  64.562 % of nodes
+Packet  183  was received by:  70.812 % of nodes
+Packet  184  was received by:  68.75 % of nodes
+Packet  185  was received by:  72.938 % of nodes
+Packet  186  was received by:  70.812 % of nodes
+Packet  187  was received by:  87.5 % of nodes
+Packet  188  was received by:  81.25 % of nodes
+Packet  189  was received by:  77.062 % of nodes
+Packet  190  was received by:  64.562 % of nodes
+Packet  191  was received by:  2.084 % of nodes
+Packet  192  was received by:  64.562 % of nodes
+Packet  193  was received by:  68.75 % of nodes
+Packet  194  was received by:  83.312 % of nodes
+Packet  195  was received by:  81.25 % of nodes
+Packet  196  was received by:  72.938 % of nodes
+Packet  197  was received by:  62.5 % of nodes
+Packet  198  was received by:  70.812 % of nodes
+Packet  199  was received by:  87.5 % of nodes
+Packet  200  was received by:  81.25 % of nodes
+Packet  201  was received by:  0.0 % of nodes
+Packet  202  was received by:  0.0 % of nodes
+Packet  203  was received by:  75.0 % of nodes
+Packet  204  was received by:  85.438 % of nodes
+Packet  205  was received by:  43.75 % of nodes
+Packet  206  was received by:  72.938 % of nodes
+Packet  207  was received by:  75.0 % of nodes
+Packet  208  was received by:  83.312 % of nodes
+Packet  209  was received by:  0.0 % of nodes
+Packet  210  was received by:  81.25 % of nodes
+Packet  211  was received by:  0.0 % of nodes
+Packet  212  was received by:  70.812 % of nodes
+Packet  213  was received by:  77.062 % of nodes
+Packet  214  was received by:  85.438 % of nodes
+Packet  215  was received by:  66.688 % of nodes
+Packet  216  was received by:  0.0 % of nodes
+Packet  217  was received by:  85.438 % of nodes
+Packet  218  was received by:  0.0 % of nodes
+Packet  219  was received by:  75.0 % of nodes
+Packet  220  was received by:  0.0 % of nodes
+Packet  221  was received by:  72.938 % of nodes
+Packet  222  was received by:  77.062 % of nodes
+Packet  223  was received by:  70.812 % of nodes
+Packet  224  was received by:  81.25 % of nodes
+Packet  225  was received by:  89.562 % of nodes
+Packet  226  was received by:  29.172 % of nodes
+Packet  227  was received by:  81.25 % of nodes
+Packet  228  was received by:  77.062 % of nodes
+Packet  229  was received by:  83.312 % of nodes
+Packet  230  was received by:  72.938 % of nodes
+Packet  231  was received by:  62.5 % of nodes
+Packet  232  was received by:  79.188 % of nodes
+Packet  233  was received by:  81.25 % of nodes
+Packet  234  was received by:  83.312 % of nodes
+Packet  235  was received by:  60.406 % of nodes
+Packet  236  was received by:  72.938 % of nodes
+Packet  237  was received by:  0.0 % of nodes
+Packet  238  was received by:  81.25 % of nodes
+Packet  239  was received by:  64.562 % of nodes
+Packet  240  was received by:  0.0 % of nodes
+Packet  241  was received by:  83.312 % of nodes
+Packet  242  was received by:  81.25 % of nodes
+Packet  243  was received by:  79.188 % of nodes
+Packet  244  was received by:  77.062 % of nodes
+Packet  245  was received by:  79.188 % of nodes
+Packet  246  was received by:  68.75 % of nodes
+Packet  247  was received by:  70.812 % of nodes
+Packet  248  was received by:  0.0 % of nodes
+Packet  249  was received by:  0.0 % of nodes
+                                                               
+-------------------- PERCENTAGE -------------------------------
+The percentage of nodes that have received the data is:  60.774296875 %
+                                                               

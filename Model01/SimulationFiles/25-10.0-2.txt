@@ -1,0 +1,16 @@
+[[0 1 0 ..., 0 1 1]
+ [0 0 0 ..., 0 0 0]
+ [0 0 0 ..., 0 0 0]
+ ..., 
+ [0 0 1 ..., 0 1 0]
+ [0 1 0 ..., 1 0 0]
+ [0 0 0 ..., 1 1 1]]
+
+------------------DATA ANALYSIS -------------------------
+Number of packets used to flood the network:  3124
+                                                               
+Percentage of node that actually received the flooded data
+                                                               
+-------------------- PERCENTAGE -------------------------------
+The percentage of nodes that have received the data is:  47.902046875 %
+                                                               

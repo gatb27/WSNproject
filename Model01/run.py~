@@ -17,16 +17,16 @@ from tinyos.tossim.TossimApp import *
 
 #simulation variable
 n = NescApp()
-vars = n.variables.variables()
+#vars = n.variables.variables()
 #t = Tossim([])
-t = Tossim(vars)
-m = t.getNode(0)
-v = m.getVariable("FloodingPartC.sinkCounter")
-counter = v.getData()
+t = Tossim(n.variables.variables())
+
 #sf = SerialForwarder(9001)
 #throttle = Throttle(t,10)
 #sf_throttle=True
 #sf_process=True
+
+#print "INITIAL VALUE OF IMPORTED VARIABLE: ", counter
 
 #Import file .out create with -> java net.tinyos.sim.LinkLayerModel config.txt
 topology="topology.out"
@@ -109,14 +109,12 @@ for line in lines:
     s = line.split()
     if (len(s) > 0):
         if (s[0] == "noise"):
-            print s[2]
-            print s[3]
-            val = s[2]
-            vall = s[3]
-            val = int(math.floor(val))
+            val = int(float(s[2]))
+            #vall = int(float(s[3]))
+            #val = int(math.floor(val))
             print val
             t.getNode(int(s[1])).addNoiseTraceReading(val)
-            t.getNode(int(s[1])).addNoiseTraceReading(vall)
+            #t.getNode(int(s[1])).addNoiseTraceReading(vall)
 '''
 
 
@@ -148,33 +146,27 @@ print "      START TOSSIM SIMULATION PART            "
 print "                                              "
 print "----------------------------------------------"
 
-#Only if we hve to use the serial port
-'''
-if (sf_process == True):
-    sf.process()
-if (sf_throttle == True):
-    throttle.initialize()
+m = t.getNode(0)
+v = m.getVariable("FloodingPartC.sinkCounter")
+counter = v.getData()
+#print "@@@@@", counter
 
-for i in range(0,50000):
+
+'''
+for i in range(30000):
     t.runNextEvent()
-    if (sf_throttle == True):
-        throttle.checkThrottle()
-    if (sf_process == True):
-        sf.process()
-'''
-
-for i in range(400000):
-	t.runNextEvent()
+    counter = v.getData()
+    print "Counter of SINK: ", counter
 	#print "Value of i: ", i  
-
-
 '''
-while (counter < 11):
-    print "The value of sinkCounter is: ", counter
+
+while (counter < 251):
+    #print "The value of sinkCounter is: ", counter
     t.runNextEvent()
+    counter = v.getData()
 
-print "10 Packets were sent by the SINK"
-'''
+print "100 Packets were sent by the SINK"
+
 
 
 
@@ -190,8 +182,8 @@ print packets[0]
 
 
 
-#Examine output file and perform some data analysis
 
+#DATA ANALYSIS
 sys.stdout = open('testData.txt', 'w')
 packetSent = [0] * nodeNumber
 packetRecv = [0] * nodeNumber
@@ -218,8 +210,8 @@ for line in lines:
             #print "---------------------END LINE -----"
 
 for i in range(0, nodeNumber):
-    print "Packet sent by node ", i, ": ", packetSent[i]
-    print "Packet recv by node ", i, ": ", packetRecv[i]
+    #print "Packet sent by node ", i, ": ", packetSent[i]
+    #print "Packet recv by node ", i, ": ", packetRecv[i]
     totalPackets = totalPackets + packetSent[i]
 
 
@@ -237,12 +229,13 @@ for line in lines:
             #print "Argument 5: ", s[5]
             #print "Argument 6: ", s[6]
             recv[int(s[6])][int(s[4])] = 1
-print recv
+#print recv
 
 
 print ""
 print "------------------DATA ANALYSIS -------------------------"
 print "Number of packets used to flood the network: ", totalPackets
+print "                                                               "
 
 print "Percentage of node that actually received the flooded data"
 
@@ -253,6 +246,15 @@ for i in range(packetSent[0]):
         percentageRecv[i] = percentageRecv[i] + recv[i][j]
     percentageRecv[i] = ( percentageRecv[i] / (nodeNumber-1) ) * 100
     print "Packet ", i, " was received by: ", percentageRecv[i], "% of nodes"
+
+sumPerc = 0
+for i in range(packetSent[0]):
+    sumPerc = sumPerc + percentageRecv[i]
+sumPerc = sumPerc / packetSent[0]
+print "                                                               "
+print "-------------------- PERCENTAGE -------------------------------"
+print "The percentage of nodes that have received the data is: ", sumPerc, "%"
+print "                                                               "
 
 
 

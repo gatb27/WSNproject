@@ -24,8 +24,8 @@ implementation{
 	my_msg_t* recv_msg;
 	uint8_t counter=0; //for ID of packets sent from SINK very 60sec
 	uint8_t recv_id=0;
-	bool recv_pack[20];
-	bool timer_pack[20];
+	bool recv_pack[200];
+	bool timer_pack[200];
 	uint32_t randomTimer=0;
 	nx_uint8_t temp_id;
 	nx_uint8_t temp_payload[DIMPAYLOAD];
@@ -55,7 +55,7 @@ implementation{
 			if(TOS_NODE_ID == 0){
 				//If I am the SINK, then I have to start a periodic timer each 60sec
 				dbg("boot", "I'm the SINK node with id %d and my RADIO is ON \n", TOS_NODE_ID);
-				call TimerSink.startPeriodic(60000);
+				call TimerSink.startPeriodic(10000);
 			}
 			else{
 				dbg("boot", "I'm a NODE with id %d and my RADIO is ON \n", TOS_NODE_ID);
@@ -108,6 +108,9 @@ implementation{
 
 			//dbg("recv", "\t The TYPE of the message is: %hhu \n", recv_msg->msg_type);
 			dbg("recv", "\t The ID of the message is: %hhu \n", recv_msg->msg_id);
+
+			dbg("recv", "RECV FROM %d PACKET %hhu \n", TOS_NODE_ID, recv_msg->msg_id);
+
 			dbg("recv", "\t The payload of the packet is: %s \n", recv_msg->payload);
 
 			if(!timer_pack[recv_msg->msg_id]){
@@ -142,6 +145,7 @@ implementation{
 			else{
 					dbg("recv", "I've received a packet for which the random timer is running \n");
 					dbg("recv", "STOPPING THE RANDOM TIMER.... \n");
+					temp_id = recv_msg->msg_id;
 					call RandomTimer.stop();
 
 			}
@@ -170,6 +174,7 @@ implementation{
 
 		dbg("sink", "Try to send a BROADCAST PACKET at time %s \n", sim_time_string());
 		if(call RadioAMSend.send(AM_BROADCAST_ADDR, &packet, sizeof(my_msg_t)) == SUCCESS){
+			dbg("radio_pack", "\t Packet dimension: %hhu \n", sizeof(my_msg_t));
 			dbg("radio_pack", "\t Source: %hhu \n", call AMPacket.source(&packet));
 			dbg("rasdio_pack", "\t Destination: %hhu \n", call AMPacket.destination(&packet));
 			dbg("radio_pack", "\t Packet Type: %hhu \n", call AMPacket.type(&packet));
@@ -191,6 +196,7 @@ implementation{
 		dbg("forw", "SENT FROM %d \n", TOS_NODE_ID);
 		dbg("forw", "I'm node %d. Trying to REFORWARD a BROADCAST PACKET at time %s \n", TOS_NODE_ID, sim_time_string());
 		if(call RadioAMSend.send(AM_BROADCAST_ADDR, &packet, sizeof(my_msg_t)) == SUCCESS){
+			dbg("radio_pack", "\t Packet dimension: %hhu \n", sizeof(my_msg_t));
 			dbg("radio_pack", "\t Source: %hhu \n", call AMPacket.source(&packet));
 			dbg("radio_pack", "\t Destination: %hhu \n", call AMPacket.destination(&packet));
 			dbg("radio_pack", "\t Packet Type: %hhu \n", call AMPacket.type(&packet));

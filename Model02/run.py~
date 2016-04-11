@@ -9,6 +9,7 @@ print "********************************"
 import sys
 import time
 import math
+import numpy as np
 import array
 from TOSSIM import *
 #from simcore import *
@@ -140,7 +141,7 @@ for i in range(0,50000):
         sf.process()
 '''
 
-for i in range(10000):
+for i in range(280000):
 	t.runNextEvent()
 	#print "Value of i: ", i  
 
@@ -154,6 +155,77 @@ print "Packets sent by node 0 (SINK)"
 print packets[0]
 '''
 
+#DATA ANALYSIS
+sys.stdout = open('testData.txt', 'w')
+packetSent = [0] * nodeNumber
+packetRecv = [0] * nodeNumber
+totalPackets = 0
+
+
+outputData = "testOut.txt"
+f = open(outputData, "r")
+lines = f.readlines()
+for line in lines:
+    s = line.split()
+    if( len(s) > 3):
+        if( s[2] == "SENT" ):
+            #print "---------------------START LINE ----"
+            #print "Argument 0: ", s[0]
+            #print "Argument 1: ", s[1]
+            #print "Argument 2: ", s[2]
+            #print "Argument 3: ", s[3]
+            #print "Argument 4: ", s[4]
+            packetSent[int(s[4])] += 1
+        if( s[2] == "RECV" ):
+            packetRecv[int(s[4])] += 1
+            #print "---------------------END LINE -----"
+
+for i in range(0, nodeNumber):
+    print "Packet sent by node ", i, ": ", packetSent[i]
+    print "Packet recv by node ", i, ": ", packetRecv[i]
+    totalPackets = totalPackets + packetSent[i]
+
+
+recv = np.array([ [0 for y in range(nodeNumber)] for x in range(packetSent[12]) ])
+
+for line in lines:
+    s = line.split()
+    if( len(s) > 3):        
+        if( s[2] == "RECV" ):
+            #print "Argument 0: ", s[0]
+            #print "Argument 1: ", s[1]
+            #print "Argument 2: ", s[2]
+            #print "Argument 3: ", s[3]
+            #print "Argument 4: ", s[4]
+            #print "Argument 5: ", s[5]
+            #print "Argument 6: ", s[6]
+            recv[int(s[6])][int(s[4])] = 1
+print recv
+
+
+print ""
+print "------------------DATA ANALYSIS -------------------------"
+print "Number of packets used to flood the network: ", totalPackets
+print "                                                               "
+
+print "Percentage of node that actually received the flooded data"
+
+percentageRecv = np.array([0]*packetSent[12], np.float16)
+for i in range(packetSent[12]):
+    for j in range(nodeNumber):
+        #print recv[i][j]
+        percentageRecv[i] = percentageRecv[i] + recv[i][j]
+    percentageRecv[i] = ( percentageRecv[i] / (nodeNumber-1) ) * 100
+    print "Packet ", i, " was received by: ", percentageRecv[i], "% of nodes"
+
+sumPerc = 0
+for i in range(packetSent[12]):
+    sumPerc = sumPerc + percentageRecv[i]
+sumPerc = sumPerc / packetSent[12]
+print "                                                               "
+print "-------------------- PERCENTAGE -------------------------------"
+print "The percentage of nodes that have received the data is: ", sumPerc, "%"
+print "                                                               "
 
 
 

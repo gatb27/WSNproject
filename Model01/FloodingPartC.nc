@@ -19,16 +19,16 @@ implementation{
 
 	message_t packet;
 	my_msg_t* recv_msg;
-	uint8_t counter=0; //for ID of packets sent from SINK very 60sec
-	uint8_t recv_id=0;
-	bool recv_pack[20];
-	nx_uint8_t temp_id;
+	uint16_t counter=0; //for ID of packets sent from SINK very 60sec
+	uint16_t recv_id=0;
+	bool recv_pack[500];
+	nx_uint16_t temp_id;
 	nx_uint8_t temp_payload[DIMPAYLOAD];
 
 	task void broadcastSink();
 	task void broadcastNode();
 
-    uint16_t sinkCounter=0;
+    int sinkCounter=0;
 
 	//----------- BOOT ------------
 	//call start() on the SpliControl that is wired to ActiveMessageC
@@ -51,7 +51,7 @@ implementation{
 			if(TOS_NODE_ID == 0){
 				//If I am the SINK, then I have to start a periodic timer each 60sec
 				dbg("boot", "I'm the SINK node with id %d and my RADIO is ON \n", TOS_NODE_ID);
-				call TimerSink.startPeriodic(60000);
+				call TimerSink.startPeriodic(10000);
 			}
 			else{
 				dbg("boot", "I'm a NODE with id %d and my RADIO is ON \n", TOS_NODE_ID);
@@ -110,7 +110,7 @@ implementation{
 			//dbg("recv", "\t The TYPE of the message is: %hhu \n", recv_msg->msg_type);
 			dbg("recv", "\t The ID of the message is: %hhu \n", recv_msg->msg_id);
 			
-			dbg("recv", "RECV FROM %d PACKET %hhu \n", TOS_NODE_ID, recv_msg->msg_id);	
+			dbg("recv", "RECV FROM %d PACKET %d \n", TOS_NODE_ID, recv_msg->msg_id);	
 			
 			dbg("recv", "\t The payload of the packet is: %s \n", recv_msg->payload);
 
@@ -150,7 +150,7 @@ implementation{
 			dbg("radio_pack", "\t Destination: %hhu \n", call AMPacket.destination(&packet));
 			dbg("radio_pack", "\t Packet Type: %hhu \n", call AMPacket.type(&packet));
 			//dbg("radio_pack", "\t Message Type: %hhu \n", msg->msg_type);
-			dbg("radio_pack", "\t Message ID: %hhu \n", msg->msg_id);
+			dbg("radio_pack", "\t Message ID: %d \n", msg->msg_id);
 			dbg("radio_pack", "\t Payload: %s \n", msg->payload);
 		}
 		
@@ -172,7 +172,7 @@ implementation{
 			dbg("radio_pack", "\t Destination: %hhu \n", call AMPacket.destination(&packet));
 			dbg("radio_pack", "\t Packet Type: %hhu \n", call AMPacket.type(&packet));
 			//dbg("radio_pack", "\t Message Type: %hhu \n", msg->msg_type);
-			dbg("radio_pack", "\t Message ID: %hhu \n", msg->msg_id);
+			dbg("radio_pack", "\t Message ID: %d \n", msg->msg_id);
 			dbg("radio_pack", "\t Payload: %s \n", msg->payload);
 		}
 		

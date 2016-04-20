@@ -53,7 +53,7 @@ implementation{
 	//----------- RADIO TURNED ON EVENT -----------
 	event void RadioControl.startDone(error_t err){
 		if(err == SUCCESS){
-			if(TOS_NODE_ID == 0){
+			if(TOS_NODE_ID == 24){
 				//If I am the SINK, then I have to start a periodic timer each 60sec
 				dbg("boot", "I'm the SINK node with id %d and my RADIO is ON \n", TOS_NODE_ID);
 				call TimerSink.startPeriodic(10000);
@@ -96,7 +96,7 @@ implementation{
 	//----------- RECEIVE EVENT --------------
 	event message_t* Receive.receive(message_t* buf, void* payload, uint8_t len){
 
-		if(TOS_NODE_ID == 0){
+		if(TOS_NODE_ID == 24){
 			dbg("recv", "\n");
 			dbg("recv", "Packet received by SINK. \n");
 			dbg("recv", "DROPPING THE PACKET... \n");

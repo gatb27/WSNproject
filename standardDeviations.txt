@@ -1,0 +1,100 @@
+ 
+Files inside MWproject are:  ['25-10.0-10.txt', '25-10.0-2.txt', '25-10.0-20.txt', '25-2.0-10.txt', '25-2.0-2.txt', '25-2.0-20.txt', '25-4-0-2.txt', '25-4.0-10.txt', '25-4.0-2.txt', '25-4.0-20.txt', '25-6.0-10.txt', '25-6.0-2.txt', '25-6.0-20.txt', '25-8.0-10.txt', '25-8.0-2.txt', '25-8.0-20.txt', '49-10.0-10.txt', '49-10.0-2.txt', '49-10.0-20.txt', '49-2.0-10.txt', '49-2.0-2.txt', '49-2.0-20.txt', '49-4.0-10.txt', '49-4.0-2.txt', '49-4.0-20.txt', '49-6.0-10.txt', '49-6.0-2.txt', '49-6.0-20.txt', '49-8.0-10.txt', '49-8.0-2.txt', '49-8.0-20.txt', '9-10.0-10.txt', '9-10.0-2.txt', '9-10.0-20.txt', '9-2.0-10.txt', '9-2.0-2.txt', '9-2.0-20.txt', '9-4.0-10.txt', '9-4.0-2.txt', '9-4.0-20.txt', '9-6.0-10.txt', '9-6.0-2.txt', '9-6.0-20.txt', '9-8.0-10.txt', '9-8.0-2.txt', '9-8.0-20.txt']
+Files inside MWproject2 are:  ['25-10.0-10.txt', '25-10.0-2.txt', '25-10.0-20.txt', '25-2.0-10.txt', '25-2.0-2.txt', '25-2.0-20.txt', '25-4.0-10.txt', '25-4.0-2.txt', '25-4.0-20.txt', '25-6.0-10.txt', '25-6.0-2.txt', '25-6.0-20.txt', '25-8.0-10.txt', '25-8.0-2.txt', '25-8.0-20.txt', '49-10.0-10.txt', '49-10.0-2.txt', '49-10.0-20.txt', '49-2.0-10.txt', '49-2.0-2.txt', '49-2.0-20.txt', '49-4.0-10.txt', '49-4.0-2.txt', '49-4.0-20.txt', '49-6.0-10.txt', '49-6.0-2.txt', '49-6.0-20.txt', '49-8.0-10.txt', '49-8.0-2.txt', '49-8.0-20.txt', '9-10.0-10.txt', '9-10.0-2.txt', '9-10.0-20.txt', '9-2.0-10.txt', '9-2.0-2.txt', '9-2.0-20.txt', '9-4.0-10.txt', '9-4.0-2.txt', '9-4.0-20.txt', '9-6.0-10.txt', '9-6.0-2.txt', '9-6.0-20.txt', '9-8.0-10.txt', '9-8.0-2.txt', '9-8.0-20.txt']
+ 
+ 
+STANDARD DEVIATIONS FOR VERSION 01
+Standard deviation:  29.82  of file  Model01/SimulationFiles/25-10.0-10.txt
+Standard deviation:  29.82  of file  Model01/SimulationFiles/25-10.0-2.txt
+Standard deviation:  27.56  of file  Model01/SimulationFiles/25-10.0-20.txt
+Standard deviation:  0.9  of file  Model01/SimulationFiles/25-2.0-10.txt
+Standard deviation:  0.37  of file  Model01/SimulationFiles/25-2.0-2.txt
+Standard deviation:  0.86  of file  Model01/SimulationFiles/25-2.0-20.txt
+Standard deviation:  1.87  of file  Model01/SimulationFiles/25-4-0-2.txt
+Standard deviation:  2.13  of file  Model01/SimulationFiles/25-4.0-10.txt
+Standard deviation:  1.87  of file  Model01/SimulationFiles/25-4.0-2.txt
+Standard deviation:  3.32  of file  Model01/SimulationFiles/25-4.0-20.txt
+Standard deviation:  10.63  of file  Model01/SimulationFiles/25-6.0-10.txt
+Standard deviation:  13.24  of file  Model01/SimulationFiles/25-6.0-2.txt
+Standard deviation:  10.51  of file  Model01/SimulationFiles/25-6.0-20.txt
+Standard deviation:  15.03  of file  Model01/SimulationFiles/25-8.0-10.txt
+Standard deviation:  23.85  of file  Model01/SimulationFiles/25-8.0-2.txt
+Standard deviation:  16.99  of file  Model01/SimulationFiles/25-8.0-20.txt
+Standard deviation:  27.8  of file  Model01/SimulationFiles/49-10.0-10.txt
+Standard deviation:  28.99  of file  Model01/SimulationFiles/49-10.0-2.txt
+Standard deviation:  23.3  of file  Model01/SimulationFiles/49-10.0-20.txt
+Standard deviation:  0.48  of file  Model01/SimulationFiles/49-2.0-10.txt
+Standard deviation:  0.29  of file  Model01/SimulationFiles/49-2.0-2.txt
+Standard deviation:  0.74  of file  Model01/SimulationFiles/49-2.0-20.txt
+Standard deviation:  1.59  of file  Model01/SimulationFiles/49-4.0-10.txt
+Standard deviation:  1.44  of file  Model01/SimulationFiles/49-4.0-2.txt
+Standard deviation:  2.6  of file  Model01/SimulationFiles/49-4.0-20.txt
+Standard deviation:  4.89  of file  Model01/SimulationFiles/49-6.0-10.txt
+Standard deviation:  3.15  of file  Model01/SimulationFiles/49-6.0-2.txt
+Standard deviation:  4.87  of file  Model01/SimulationFiles/49-6.0-20.txt
+Standard deviation:  29.68  of file  Model01/SimulationFiles/49-8.0-10.txt
+Standard deviation:  32.91  of file  Model01/SimulationFiles/49-8.0-2.txt
+Standard deviation:  27.74  of file  Model01/SimulationFiles/49-8.0-20.txt
+Standard deviation:  27.26  of file  Model01/SimulationFiles/9-10.0-10.txt
+Standard deviation:  27.26  of file  Model01/SimulationFiles/9-10.0-2.txt
+Standard deviation:  27.45  of file  Model01/SimulationFiles/9-10.0-20.txt
+Standard deviation:  1.11  of file  Model01/SimulationFiles/9-2.0-10.txt
+Standard deviation:  1.57  of file  Model01/SimulationFiles/9-2.0-2.txt
+Standard deviation:  2.08  of file  Model01/SimulationFiles/9-2.0-20.txt
+Standard deviation:  6.99  of file  Model01/SimulationFiles/9-4.0-10.txt
+Standard deviation:  7.72  of file  Model01/SimulationFiles/9-4.0-2.txt
+Standard deviation:  5.3  of file  Model01/SimulationFiles/9-4.0-20.txt
+Standard deviation:  26.43  of file  Model01/SimulationFiles/9-6.0-10.txt
+Standard deviation:  10.32  of file  Model01/SimulationFiles/9-6.0-2.txt
+Standard deviation:  18.68  of file  Model01/SimulationFiles/9-6.0-20.txt
+Standard deviation:  22.28  of file  Model01/SimulationFiles/9-8.0-10.txt
+Standard deviation:  21.12  of file  Model01/SimulationFiles/9-8.0-2.txt
+Standard deviation:  31.29  of file  Model01/SimulationFiles/9-8.0-20.txt
+ 
+ 
+STANDARD DEVIATIONS FOR VERSIONS 02
+Standard deviation:  33.11  of file  Model02/SimulationFiles/25-10.0-10.txt
+Standard deviation:  32.49  of file  Model02/SimulationFiles/25-10.0-2.txt
+Standard deviation:  31.16  of file  Model02/SimulationFiles/25-10.0-20.txt
+Standard deviation:  0.9  of file  Model02/SimulationFiles/25-2.0-10.txt
+Standard deviation:  1.8  of file  Model02/SimulationFiles/25-2.0-2.txt
+Standard deviation:  1.58  of file  Model02/SimulationFiles/25-2.0-20.txt
+Standard deviation:  3.0  of file  Model02/SimulationFiles/25-4.0-10.txt
+Standard deviation:  2.51  of file  Model02/SimulationFiles/25-4.0-2.txt
+Standard deviation:  3.37  of file  Model02/SimulationFiles/25-4.0-20.txt
+Standard deviation:  11.96  of file  Model02/SimulationFiles/25-6.0-10.txt
+Standard deviation:  7.2  of file  Model02/SimulationFiles/25-6.0-2.txt
+Standard deviation:  13.07  of file  Model02/SimulationFiles/25-6.0-20.txt
+Standard deviation:  16.45  of file  Model02/SimulationFiles/25-8.0-10.txt
+Standard deviation:  30.15  of file  Model02/SimulationFiles/25-8.0-2.txt
+Standard deviation:  23.07  of file  Model02/SimulationFiles/25-8.0-20.txt
+Standard deviation:  35.77  of file  Model02/SimulationFiles/49-10.0-10.txt
+Standard deviation:  37.26  of file  Model02/SimulationFiles/49-10.0-2.txt
+Standard deviation:  35.25  of file  Model02/SimulationFiles/49-10.0-20.txt
+Standard deviation:  0.91  of file  Model02/SimulationFiles/49-2.0-10.txt
+Standard deviation:  0.74  of file  Model02/SimulationFiles/49-2.0-2.txt
+Standard deviation:  0.98  of file  Model02/SimulationFiles/49-2.0-20.txt
+Standard deviation:  2.0  of file  Model02/SimulationFiles/49-4.0-10.txt
+Standard deviation:  1.67  of file  Model02/SimulationFiles/49-4.0-2.txt
+Standard deviation:  2.05  of file  Model02/SimulationFiles/49-4.0-20.txt
+Standard deviation:  7.1  of file  Model02/SimulationFiles/49-6.0-10.txt
+Standard deviation:  9.28  of file  Model02/SimulationFiles/49-6.0-2.txt
+Standard deviation:  10.52  of file  Model02/SimulationFiles/49-6.0-20.txt
+Standard deviation:  15.68  of file  Model02/SimulationFiles/49-8.0-10.txt
+Standard deviation:  30.79  of file  Model02/SimulationFiles/49-8.0-2.txt
+Standard deviation:  39.84  of file  Model02/SimulationFiles/49-8.0-20.txt
+Standard deviation:  36.24  of file  Model02/SimulationFiles/9-10.0-10.txt
+Standard deviation:  29.62  of file  Model02/SimulationFiles/9-10.0-2.txt
+Standard deviation:  35.54  of file  Model02/SimulationFiles/9-10.0-20.txt
+Standard deviation:  1.75  of file  Model02/SimulationFiles/9-2.0-10.txt
+Standard deviation:  0.79  of file  Model02/SimulationFiles/9-2.0-2.txt
+Standard deviation:  2.9  of file  Model02/SimulationFiles/9-2.0-20.txt
+Standard deviation:  11.73  of file  Model02/SimulationFiles/9-4.0-10.txt
+Standard deviation:  7.1  of file  Model02/SimulationFiles/9-4.0-2.txt
+Standard deviation:  7.71  of file  Model02/SimulationFiles/9-4.0-20.txt
+Standard deviation:  14.45  of file  Model02/SimulationFiles/9-6.0-10.txt
+Standard deviation:  12.34  of file  Model02/SimulationFiles/9-6.0-2.txt
+Standard deviation:  34.43  of file  Model02/SimulationFiles/9-6.0-20.txt
+Standard deviation:  34.92  of file  Model02/SimulationFiles/9-8.0-10.txt
+Standard deviation:  29.2  of file  Model02/SimulationFiles/9-8.0-2.txt
+Standard deviation:  24.24  of file  Model02/SimulationFiles/9-8.0-20.txt

@@ -110,7 +110,7 @@ print "      START TOSSIM SIMULATION PART            "
 print "                                              "
 print "----------------------------------------------"
 
-m = t.getNode(0)
+m = t.getNode(24)
 v = m.getVariable("FloodingPartC.sinkCounter")
 counter = v.getData()
 
@@ -160,8 +160,8 @@ for i in range(0, nodeNumber):
     totalPackets = totalPackets + packetSent[i]
 
 
-recv = np.array([ [0 for y in range(nodeNumber)] for x in range(packetSent[0]) ])
-
+recv = np.array([ [0 for y in range(nodeNumber)] for x in range(packetSent[24]) ])
+np.set_printoptions(threshold=np.nan)
 for line in lines:
     s = line.split()
     if( len(s) > 3):        
@@ -174,7 +174,7 @@ for line in lines:
             #print "Argument 5: ", s[5]
             #print "Argument 6: ", s[6]
             recv[int(s[6])][int(s[4])] = 1
-#print recv
+print recv
 
 
 print ""
@@ -184,18 +184,23 @@ print "                                                               "
 
 print "Percentage of node that actually received the flooded data"
 
-percentageRecv = np.array([0]*packetSent[0], np.float16)
-for i in range(packetSent[0]):
+percentageRecv = np.array([0]*packetSent[24], np.float16)
+for i in range(packetSent[24]):
     for j in range(nodeNumber):
         #print recv[i][j]
         percentageRecv[i] = percentageRecv[i] + recv[i][j]
     percentageRecv[i] = ( percentageRecv[i] / (nodeNumber-1) ) * 100
+    percentageRecv[i] = round(float(percentageRecv[i]),2)
     print "Packet ", i, " was received by: ", percentageRecv[i], "% of nodes"
 
+#standardDev = 0.00
+#standardDev = round(float(np.std(percentageRecv)),2)
+#print "Standard Deviation is: ", standardDev
+
 sumPerc = 0
-for i in range(packetSent[0]):
+for i in range(packetSent[24]):
     sumPerc = sumPerc + percentageRecv[i]
-sumPerc = sumPerc / packetSent[0]
+sumPerc = sumPerc / packetSent[24]
 print "                                                               "
 print "-------------------- PERCENTAGE -------------------------------"
 print "The percentage of nodes that have received the data is: ", sumPerc, "%"

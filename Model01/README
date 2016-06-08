@@ -22,8 +22,9 @@ The output of the simulation is written over -> testOut.txt
 The simulation then count the SEND and the RECV. 
 Then there is the Data Analysis part which finds the percentage of nodes that have received the packets.
 Finally there is the calculation of the average of the percentage of nodes that have received the packets.
+These final results are written in a file called testData.txt
 
 We have noticed a trend that's obvious: incrementing the distance of the nodes, the percentage of nodes that receiver the packets decrease, and so does the number of packets that travel into the networks. Up to 6 meters performance are good. For 8 meters when the payload increase, the performance decreases a bit. With the actual configuration of power at 10 meters we have really bad performance.
 
-
+Inside the folder Simulation Files there is an extract of the all the testData.txt for all the possibile combination of number of nodes, distance and payload size. These are used by another python script in the GIT folder WSNproject.
 

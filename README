@@ -1,3 +1,6 @@
 This folder is for the project of WSN. There are two folders:
 1) Model01 for project with simple reforwarding
 2) Model02 for project with reforward only if random timer expires
+
+
+VarianceAnalysis.py is a python script that looks into the folder SimulationFiles for both the Model and define the standard deviation of the percentage of nodes. We've noticed that when the distance increase, also the standard deviation increases. For the shorter distances, 2 and 4 meters, we have acceptable values. For longer distances the standard deviation starts to increase and so the obtained average in some cases could result in an overstimation of the performance. 

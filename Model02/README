@@ -1,1 +1,11 @@
 Folder with all the files of the project of WSN in the second version: a node forwards a packet after a random timer, only if it doesn't see another reforwarding of the same packet  by another node. 
+
+The Model02 works exactly as the Model01. The only difference is in the way nodes behave when they receive something. 
+
+If in Model01 the nodes always forward a packet when received for the first time, now they start a timer. In this way when a single packet is received by more nodes, all of them start a random timer. The node with the shortest timer will send the packet. This causes a new situation: a node can receive a packet while a fimer is running; if the timer refers to the same packets it has just received, it will stop the timer.
+
+If we look at the percentage of nodes that have received the packets, the trend is the same of Model01: good results for up to 6 meters, so and so for 8 meters and bad performance for 10 meters.
+The interesting result is about the number of packets that we use to flood the network. Even if the performance in term of percentage of nodes is pratically the same as the one of Model01 (or even higher), the number of packets used is reduced.
+In particular with short distances like 2 and 4 meters, the number of packets is reduced up to 6 times. With 6 meters the reduction is by 2. For 8 meters the difference is small, while for 10 meters most of the times is practically the same.
+The results for 10 meters are simiar for Model01 and Model02 because we lose the same number of packets, and so there isn't a great convenience to forward or not forward.
+

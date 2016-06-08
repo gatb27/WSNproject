@@ -1,1 +1,29 @@
 Folder with all the file of the project of WSN in the basic version: when a node receive a packet, it reforward it in broadcast.
+
+FloodingPartC.nc -> contains the code for the program
+FloodingPartAppC.nc -> configuration for the wiring of the components
+flooding.h -> contains strcture of packets and fixed values like payload's dimension
+
+To create the exectuble for the MicaZ mote, use this command: 
+
+  make micaz sim
+
+config.txt -> the configuration file for the network. Definition of the environment, number of nodes, topology.
+To generate the text files later used by TOSSIM, use this command: 
+
+  java sim.tinyos.sim.LinkLayerModel config.txt
+
+This generate two files: topology.out and linkgain.out
+
+To simulate inside the TOSSIM environment we used a python script -> run.py
+The script stops the simulation after 250 packets are sent from the SINK. 
+It's important to define which node is the Sink (It cane be 0 if at the edge, or with 49 nodes the middle one is 25)
+The output of the simulation is written over -> testOut.txt
+The simulation then count the SEND and the RECV. 
+Then there is the Data Analysis part which finds the percentage of nodes that have received the packets.
+Finally there is the calculation of the average of the percentage of nodes that have received the packets.
+
+We have noticed a trend that's obvious: incrementing the distance of the nodes, the percentage of nodes that receiver the packets decrease, and so does the number of packets that travel into the networks. Up to 6 meters performance are good. For 8 meters when the payload increase, the performance decreases a bit. With the actual configuration of power at 10 meters we have really bad performance.
+
+
+
